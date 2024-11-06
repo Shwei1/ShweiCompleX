@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Ignore CMake build directories
+cmake-build-debug/
+cmake-build-release/
+build/
+CMakeFiles/
+CMakeCache.txt
+
+# Ignore other CMake-related files
+*.cmake
+*.cbp
+*.swp
