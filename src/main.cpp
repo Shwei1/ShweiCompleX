@@ -19,10 +19,7 @@ int main(){
 //    PolynomialEquation quadratic1(0, 0, 1, 0, 1);
 //    auto roots4 = quadratic1.solve_quadratic();
 //    std::cout << roots4[0] << ", " << roots4[1];
-//    PolynomialEquation quart(1, 0, 0, 0, 1);
-//    auto rootsquart = quart.solve();
-//    std::cout << rootsquart[0] << ' ' << rootsquart[1] << ' ' << rootsquart[2] << ' ' << rootsquart[3] << std::endl;
-
-
-
+    PolynomialEquation quart(1, 0, 0, 0, 1);
+    auto rootsquart = quart.solve();
+    std::cout << rootsquart[0] << ' ' << rootsquart[1] << ' ' << rootsquart[2] << ' ' << rootsquart[3] << std::endl;
 }

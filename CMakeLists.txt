@@ -8,7 +8,7 @@ add_executable(ShweiCompleX
 #        src/Complex.cpp
         src/Complex.hpp
         src/PolynomialEquation.hpp
-        src/PolynomialException.hpp
         src/main.cpp
         src/PolynomialGenerator.cpp
-        src/PolynomialGenerator.hpp)
+        src/PolynomialGenerator.hpp
+        src/PolynomialEquation.cpp)
