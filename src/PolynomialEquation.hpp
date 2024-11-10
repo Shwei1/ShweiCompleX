@@ -27,10 +27,37 @@ public:
             : coefficients_{e, 0, 0, 0, 0} {}
 
 
+    [[nodiscard]] std::vector<ComplexType> solve() const {
+        std::vector<ComplexType> roots;
+        switch (get_equation_type()) {
+            case 1:
+                roots = solve_linear();
+            case 2:
+                roots = solve_quadratic();
+            case 3:
+                roots = solve_cubic();
+            default:
+                roots = solve_quartic();
+        }
+        return roots;
+    }
+
+    [[nodiscard]] std::vector<ComplexType> solve_linear() const {
+        std::vector<ComplexType> root;
+        ComplexType a = coefficients_[1];
+        ComplexType b = coefficients_[0];
+
+        ComplexType x = -b/a;
+        root.push_back(x);
+        return root;
+    }
+
+
+
     [[nodiscard]]std::vector<ComplexType> solve_quadratic() const {
         ComplexType a = coefficients_[2];
-        ComplexType b = coefficients_[1];
-        ComplexType c = coefficients_[0];
+        ComplexType b = coefficients_[3];
+        ComplexType c = coefficients_[4];
 
         ComplexType discriminant = b * b - 4.0 * a * c;
         std::vector<ComplexType> roots;
@@ -52,31 +79,17 @@ public:
         ComplexType p = (3 * a * c - b * b) / (3 * a * a);
         ComplexType q = (2 * b * b * b - 9 * a * b * c + 27 * a * a * d)/(27 * a * a * a);
 
-        std::cout << "The value of p: " << p << std::endl;
-        std::cout << "The value of q: " << q << std::endl;
-
         ComplexType discriminant = (q * q) / 4 + (p * p * p) / 27;
-
-        std::cout << "The value of the discriminant: " << discriminant << std::endl;
 
         ComplexType discriminant_root = ComplexType::sqrt(discriminant);
 
-        std::cout << "The value of the discriminant root: " << discriminant_root << std::endl;
 
         if (discriminant.get_real() > 0) {
-            std::cout << "You have called the case for d>0." << std::endl;
+
             ComplexType u = std::cbrt((-q.get_real()) / 2 + discriminant_root.get_real());
             ComplexType v = std::cbrt((-q.get_real()) / 2 - discriminant_root.get_real());
 
-            std::cout << "The value of u: " << u << std::endl;
-            std::cout << "The value of v: " << v << std::endl;
-
-            ComplexType omega1 = Complex(1.0).roots(3)[1];
-            ComplexType omega2 = Complex(1.0).roots(3)[2];
-
             ComplexType x1 = u + v;
-
-            std::cout << "The value of u+v: " << x1 << std::endl;
 
             ComplexType x2 = -(u + v) / 2 + ComplexType(0, std::sqrt(3.0) / 2) * (u - v);
             ComplexType x3 = -(u + v) / 2 - ComplexType(0, std::sqrt(3.0) / 2) * (u - v);
@@ -109,7 +122,6 @@ public:
             roots.push_back(x3);
         }
 
-
         ComplexType shift = -b / (3.0 * a);
 
         for (auto& root : roots) {
@@ -118,10 +130,75 @@ public:
         return roots;
     }
 
+
+    [[nodiscard]] std::vector<ComplexType> solve_quartic() const {
+        ComplexType a = coefficients_[0];
+        ComplexType b = coefficients_[1];
+        ComplexType c = coefficients_[2];
+        ComplexType d = coefficients_[3];
+        ComplexType e = coefficients_[4];
+
+        std::vector<ComplexType> roots;
+
+        ComplexType qa = a;
+        ComplexType qb = b;
+
+        a = b/qa;
+        b = c/qa;
+        c = d/qa;
+        d = e/qa;
+
+        ComplexType a0 = 0.25 * a;
+        ComplexType a02 = a0 * a0;
+
+        ComplexType p = 3 * a02 - 0.5 * b;
+        ComplexType q = a * a02 - b * a0 + 0.5 * c;
+        ComplexType r = 3 * a02*a02 - b*a02 + c*a0 - d;
+
+        PolynomialEquation cubic_resolvent(1, p, r, p*r - 0.5*q*q);
+
+        auto resolvent_roots = cubic_resolvent.solve_cubic();
+
+        ComplexType z = resolvent_roots[0];
+
+        for (const auto& root : resolvent_roots) {
+            if (root.get_imag() == 0 && root.get_real() > z.get_real()) {
+                z = root;
+            }
+        }
+
+        ComplexType alpha = std::sqrt(2*p.get_real() + 2*z.get_real());
+
+        ComplexType beta;
+        if (alpha == ComplexType(0, 0)){
+            beta = z*z + r;
+        }
+        else {
+            beta = -q / alpha;
+        }
+
+        PolynomialEquation quadratic1(1, alpha, z + beta);
+        PolynomialEquation quadratic2(1, -alpha, z - beta);
+
+        auto roots1 = quadratic1.solve_quadratic();
+        auto roots2 = quadratic2.solve_quadratic();
+
+        roots.insert(roots.end(), roots1.begin(), roots1.end());
+        roots.insert(roots.end(), roots2.begin(), roots2.end());
+
+        ComplexType shift = -qb / (4 * qa);
+        for (auto& root : roots) {
+            root = root + shift;
+        }
+
+        return roots;
+    }
+
+
 private:
     std::array<ComplexType, 5> coefficients_;
 
-    int get_equation_type() const{
+    [[nodiscard]] int get_equation_type() const{
         if (coefficients_[4] != 0)
             return 4;
         else if (coefficients_[3] != 0)

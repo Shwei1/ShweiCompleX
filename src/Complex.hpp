@@ -267,20 +267,29 @@ public:
 */
 
     friend std::ostream& operator<< (std::ostream& os, const Complex& complex) {
-        os << complex.realPart_;
-        if (complex.imagPart_ >= 0) {
-            if (complex.imagPart_ == 1.0){
-                os << " + " << "i";
-            }
-            else
-                os << " + " << complex.imagPart_ << "i";
-        } else {
-            if (complex.imagPart_ == -1.0){
-                os << " - " << "i";
-            }
-            else
-                os << " - " << -complex.imagPart_ << "i";
+        const double epsilon = 1e-10;
+        if (std::abs(complex.realPart_) <= epsilon) {
+            os << 0;
         }
+        else
+            os << complex.realPart_;
+
+        if (std::abs(complex.imagPart_) >= epsilon) {
+            if (complex.imagPart_ > 0) {
+                if (std::abs(complex.imagPart_ - 1.0) < epsilon) {
+                    os << " + i";
+                } else {
+                    os << " + " << complex.imagPart_ << "i";
+                }
+            } else {
+                if (std::abs(complex.imagPart_ + 1.0) < epsilon) {
+                    os << " - i";
+                } else {
+                    os << " - " << -complex.imagPart_ << "i";
+                }
+            }
+        }
+
         return os;
     }
 
@@ -319,11 +328,19 @@ public:
 * @return Основний комплексний квадратний корінь.
 */
     static Complex sqrt(const Complex& complex) {
-        double r = std::sqrt(complex.magnitude());
+        double r = std::sqrt(std::abs(complex.magnitude()));
         double theta = complex.phase() / 2;
-        return Complex(r * std::cos(theta), r * std::sin(theta));
-    }
 
+        double real_part = r * std::cos(theta);
+        double imag_part = r * std::sin(theta);
+
+        const double epsilon = 1e-10;
+        if (std::abs(imag_part) < epsilon) {
+            imag_part = 0.0;
+        }
+
+        return Complex(real_part, imag_part);
+    }
 /**
 * @brief Обчислює основний кубічний корінь з комплексного числа.
 * @see roots(3) для загального випадку.
