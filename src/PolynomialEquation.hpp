@@ -20,9 +20,10 @@ public:
     [[nodiscard]] std::vector<ComplexType> solve_cubic() const;
     [[nodiscard]] std::vector<ComplexType> solve_quartic() const;
 
+    [[nodiscard]] int get_equation_type() const;
+
 private:
     std::array<ComplexType, 5> coefficients_;
-    [[nodiscard]] int get_equation_type() const;
 };
 
 

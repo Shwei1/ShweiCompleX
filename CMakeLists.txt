@@ -11,4 +11,6 @@ add_executable(ShweiCompleX
         src/main.cpp
         src/PolynomialGenerator.cpp
         src/PolynomialGenerator.hpp
-        src/PolynomialEquation.cpp)
+        src/PolynomialEquation.cpp
+        src/PolynomialSolver.cpp
+        src/PolynomialSolver.hpp)

@@ -30,13 +30,14 @@ void PolynomialGenerator::generate_polynomials(const std::string& filename, int 
                 polynomial += "+ ";
             }
             if (j == 1)
-                polynomial += str_coef + 'x' + ' ';
+                polynomial += str_coef + " x" + ' ';
             else if (j == 0)
                 polynomial += str_coef + " = 0";
             else {
-                polynomial += str_coef + "x^" + str_power + ' ';
+                polynomial += str_coef + " x^" + str_power + ' ';
             }
         }
         f_out << polynomial << '\n';
     }
+    f_out.close();
 }

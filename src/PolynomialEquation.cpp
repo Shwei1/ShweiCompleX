@@ -22,24 +22,36 @@ std::vector<PolynomialEquation::ComplexType> PolynomialEquation::solve() const {
     switch (get_equation_type()) {
         case 1:
             roots = solve_linear();
+            break;
         case 2:
             roots = solve_quadratic();
+            break;
         case 3:
             roots = solve_cubic();
+            break;
         default:
             roots = solve_quartic();
+            break;
     }
     return roots;
 }
 
 std::vector<PolynomialEquation::ComplexType> PolynomialEquation::solve_linear() const {
     std::vector<ComplexType> root;
-    ComplexType a = coefficients_[1];
-    ComplexType b = coefficients_[0];
+    ComplexType a = coefficients_[3];
+    ComplexType b = coefficients_[4];
 
-    ComplexType x = -b/a;
-    root.push_back(x);
-    return root;
+    if (a == ComplexType(0, 0) && b == ComplexType(0, 0)){
+        root.emplace_back(std::nan("Infinite solutions"));
+    }
+    else if (a == ComplexType(0, 0) && b != ComplexType(0, 0)){
+        root.emplace_back(std::nan("No solutions"));
+    }
+    else {
+        ComplexType x = -b / a;
+        root.push_back(x);
+    }
+        return root;
 }
 
 std::vector<PolynomialEquation::ComplexType> PolynomialEquation::solve_quadratic() const {
@@ -182,15 +194,13 @@ std::vector<PolynomialEquation::ComplexType> PolynomialEquation::solve_quartic()
 }
 
 int PolynomialEquation::get_equation_type() const{
-        if (coefficients_[4] != 0)
+        if (coefficients_[0] != 0)
             return 4;
-        else if (coefficients_[3] != 0)
+        else if (coefficients_[1] != 0)
             return 3;
         else if (coefficients_[2] != 0)
             return 2;
-        else if (coefficients_[1] != 0)
-            return 1;
         else
-            return 0;
+            return 1;
     }
 
