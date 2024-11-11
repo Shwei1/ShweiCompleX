@@ -16,7 +16,7 @@ void PolynomialSolver(const std::string& filename_in, const std::string& filenam
 
     std::string line;
     while (std::getline(f_in, line)) {
-        int coefficients[5] = {0, 0, 0, 0, 0};  // Initialize all coefficients to 0
+        int coefficients[5] = {0, 0, 0, 0, 0};
         std::stringstream ss(line);
         int coef;
         std::string power;

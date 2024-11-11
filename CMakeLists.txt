@@ -13,4 +13,5 @@ add_executable(ShweiCompleX
         src/PolynomialGenerator.hpp
         src/PolynomialEquation.cpp
         src/PolynomialSolver.cpp
-        src/PolynomialSolver.hpp)
+        src/PolynomialSolver.hpp
+        src/CirculantMatrix.cpp)
