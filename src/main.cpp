@@ -2,32 +2,49 @@
 #include "PolynomialEquation.hpp"
 #include "PolynomialGenerator.hpp"
 #include "PolynomialSolver.hpp"
+#include "CirculantMatrix.hpp"
+#include "GenerateCirculantMatrix.hpp"
 
 int main(){
 //    PolynomialGenerator::initialise();
 //    PolynomialGenerator::generate_polynomials("../polynomials.txt", 100);
-//    PolynomialEquation cubic1(0, 1, -6, 11, -6);5
-//    auto roots = cubic1.solve_cubic();
-//    std::cout << roots[0] << ' ' << roots[1] << ' ' << roots[2] << std::endl;
-//
-//    PolynomialEquation cubic2(0, 1, 0, -7, 6);
-//    auto roots2 = cubic2.solve_cubic();
-//    std::cout << roots2[0] << ' ' << roots2[1] << ' ' << roots2[2] << std::endl;
-//
-//    PolynomialEquation cubic3(0, 1, 0, -1, 1);
-//    auto roots3 = cubic3.solve_cubic();
-//    std::cout << roots3[0] << ' ' << roots3[1] << ' ' << roots3[2] << std::endl;
-//    PolynomialEquation quadratic1(0, 0, 1, 0, 1);
-//    auto roots4 = quadratic1.solve_quadratic();
-//    std::cout << roots4[0] << ", " << roots4[1];
-//    PolynomialEquation quart(1, 0, 0, 0, 1);
-//    auto rootsquart = quart.solve();
-//    std::cout << rootsquart[0] << ' ' << rootsquart[1] << ' ' << rootsquart[2] << ' ' << rootsquart[3] << std::endl;
 
 // 10x^4 + -8x^3 + -45x^2 + -28x + -40 = 0
 //PolynomialEquation p(10, -8, -45, -28, -40);
 //auto roots = p.solve();
 //std::cout << roots[0] << ' ' << roots[1] << ' ' << roots[2]  << ' ' << roots[3] << std::endl;
 
-    PolynomialSolver("/Users/shwei/CLionProjects/ShweiCompleX/polynomials.txt", "../polynomials_my_out.txt");
+//    PolynomialSolver("/Users/shwei/CLionProjects/ShweiCompleX/polynomials.txt", "../polynomials_my_out.txt");
+
+//std::vector<Complex<double>> main_row;
+//std::vector<Complex<double>> free_coefs;
+
+//CirculantMatrix cm("../my_matrix.txt");
+//
+//cm.solve_and_output("../shweicomplex_matrix_solutions.txt");
+
+GenerateCirculantMatrix("../my_matrix.txt");
+
+CirculantMatrix cm("../my_matrix.txt");
+
+cm.solve_and_output("../shweicomplex_matrix_solutions.txt");
+
+//cm.output();
+
+//CirculantMatrix cm(main_row, free_coefs);
+
+//auto solutions = cm.solve();
+
+//for (Complex<double> value: solutions){
+//    std::cout << value << ", ";
+//}
+
+//Complex c(1.0);
+//
+//auto rootsn = c.roots(8);
+//
+//for (Complex root: rootsn){
+//    std::cout << root << std::endl;
+//}
+
 }

@@ -1,9 +1,9 @@
 #include "PolynomialEquation.hpp"
 #include "Complex.hpp"
 #include "PolynomialSolver.hpp"
-#include <regex>
 #include <fstream>
 #include <iostream>
+#include <chrono>
 
 void PolynomialSolver(const std::string& filename_in, const std::string& filename_out) {
     std::ifstream f_in(filename_in);
@@ -41,6 +41,8 @@ void PolynomialSolver(const std::string& filename_in, const std::string& filenam
             }
         }
 
+        auto start = std::chrono::high_resolution_clock::now();
+
         PolynomialEquation polynomial(coefficients[0], coefficients[1], coefficients[2], coefficients[3], coefficients[4]);
         auto roots = polynomial.solve();
         f_out << line << std::endl;
@@ -60,7 +62,13 @@ void PolynomialSolver(const std::string& filename_in, const std::string& filenam
         }
         f_out << ")\n\n";
 
+        auto end = std::chrono::high_resolution_clock::now();
+
+        std::chrono::duration<double> duration = end - start;
+        std::cout << "Time consumed solving the equations with ShweiCompleX: " << duration.count() << " seconds" << std::endl;
     }
+
+
 
     f_in.close();
     f_out.close();
