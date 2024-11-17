@@ -192,8 +192,11 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
     c_double_complex q = a * a02 - b * a0 + 0.5 * c;
     c_double_complex r = 3.0 * a02 * a02 - b * a02 + c * a0 - d;
 
+    printf("p = %.2f + %.2fi\n", creal(p), cimag(p));
+    printf("q = %.2f + %.2fi\n", creal(q), cimag(q));
+    printf("r = %.2f + %.2fi\n", creal(r), cimag(r));
 
-    double cubic_coeffs[4] = {1.0, creal(p), creal(r), creal(p * r - 0.5 * q * q)};
+    double cubic_coeffs[5] = {0.0, 1.0, creal(p), creal(r), creal(p * r - 0.5 * q * q)};
     C_PolynomialEquation* cubic_resolvent = PolynomialEquation_create(cubic_coeffs, 4);
 
     c_double_complex* resolvent_roots = malloc(3 * sizeof(c_double_complex));
@@ -213,6 +216,8 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
         }
     }
 
+    printf("z = %.2f + %.2fi\n", creal(z), cimag(z));
+
     free(resolvent_roots);
     PolynomialEquation_destroy(cubic_resolvent);
 
@@ -227,8 +232,11 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
         beta = -q / alpha;
     }
 
-    double quadratic1_coeffs[3] = {1.0, creal(alpha), creal(z + beta)};
-    double quadratic2_coeffs[3] = {1.0, -creal(alpha), creal(z - beta)};
+    printf("alpha = %.2f + %.2fi\n", creal(alpha), cimag(alpha));
+    printf("beta = %.2f + %.2fi\n", creal(beta), cimag(beta));
+
+    double quadratic1_coeffs[5] = {0.0, 0.0, 1.0, creal(alpha), creal(z + beta)};
+    double quadratic2_coeffs[5] = {0.0, 0.0, 1.0, -creal(alpha), creal(z - beta)};
 
     C_PolynomialEquation* quadratic1 = PolynomialEquation_create(quadratic1_coeffs, 3);
     C_PolynomialEquation* quadratic2 = PolynomialEquation_create(quadratic2_coeffs, 3);
@@ -256,8 +264,6 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
     PolynomialEquation_destroy(quadratic1);
     PolynomialEquation_destroy(quadratic2);
 }
-
-
 
 
 C_PolynomialEquation* PolynomialEquation_create(double* coeffs, int size) {
