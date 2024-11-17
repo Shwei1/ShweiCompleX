@@ -120,6 +120,8 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
     c_double_complex c = self->coefficients[3]; // Linear term
     c_double_complex d = self->coefficients[4]; // Constant term
 
+    printf("Initialised coefficients: %lf %lf %lf %lf\n", creal(a), creal(b), creal(c), creal(d));
+
     if (a == 0.0) {
         *root_count = 0;
         return;
@@ -128,23 +130,37 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
     c_double_complex p = (3.0 * a * c - b * b) / (3.0 * a * a);
     c_double_complex q = (2.0 * b * b * b - 9.0 * a * b * c + 27.0 * a * a * d) / (27.0 * a * a * a);
 
+    printf("p = %lf\n", creal(p));
+    printf("q = %lf\n", creal(q));
+
     c_double_complex discriminant = (q * q) / 4.0 + (p * p * p) / 27.0;
+
+    printf("discriminant = %lf\n", creal(discriminant));
+
     c_double_complex discriminant_root = csqrt(discriminant);
 
+    printf("discriminant root = %lf\n", creal(discriminant_root));
+
     if (creal(discriminant) > 0) {
+        printf("You are dealing with case d>0, specifically d = %lf\n", creal(discriminant));
         c_double_complex u = cpow(-q / 2.0 + discriminant_root, 1.0 / 3.0);
         c_double_complex v = cpow(-q / 2.0 - discriminant_root, 1.0 / 3.0);
+
+        printf("u = %lf\n", creal(u));
+        printf("v = %lf\n", creal(v));
 
         roots[0] = u + v;
         roots[1] = -(u + v) / 2.0 + I * csqrt(3.0) / 2.0 * (u - v);
         roots[2] = -(u + v) / 2.0 - I * csqrt(3.0) / 2.0 * (u - v);
     } else if (creal(discriminant) == 0) {
+        printf("You are dealing with case d=0\n, specifically d = %lf", creal(discriminant));
         c_double_complex u = cpow(-q / 2.0, 1.0 / 3.0);
 
         roots[0] = 2.0 * u;
         roots[1] = -u;
         roots[2] = -u;
     } else {
+        printf("You are dealing with case d<0\n, specifically d = %lf", creal(discriminant));
 
         double r = 2.0 * csqrt(-creal(p) / 3.0);
         double theta = acos(3.0 * creal(q) / (2.0 * creal(p) * csqrt(-3.0 / creal(p))));
@@ -161,10 +177,6 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
 
     *root_count = 3;
 }
-
-#include <tgmath.h>
-#include <stdlib.h>
-#include "C_PolynomialEquation.h"
 
 void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roots, int* root_count) {
 
@@ -210,8 +222,9 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
     cubic_resolvent->solve_cubic(cubic_resolvent, resolvent_roots, &resolvent_root_count);
 
     c_double_complex z = resolvent_roots[0];
-    for (int i = 1; i < resolvent_root_count; i++) {
-        if (cimag(resolvent_roots[i]) == 0 && creal(resolvent_roots[i]) > creal(z)) {
+    for (int i = 0; i < resolvent_root_count; i++) {
+            printf("Looking at z[%d] = %lf + %lfi\n", i+1, creal(z), cimag(z));
+        if (fabs(cimag(resolvent_roots[i])) < 1e-10 && creal(resolvent_roots[i]) > creal(z)) {
             z = resolvent_roots[i];
         }
     }
