@@ -1,50 +1,49 @@
 #include <iostream>
-#include "PolynomialEquation.hpp"
-#include "PolynomialGenerator.hpp"
-#include "PolynomialSolver.hpp"
-#include "CirculantMatrix.hpp"
-#include "GenerateCirculantMatrix.hpp"
+//#include "PolynomialGenerator.hpp"
+//#include "PolynomialSolver.hpp"
+//#include "CirculantMatrix.hpp"
+//#include "GenerateCirculantMatrix.hpp"
+// C
+#include "C_PolynomialEquation.h"
+#include <cstdio>
 
 int main(){
 //    PolynomialGenerator::initialise();
 //    PolynomialGenerator::generate_polynomials("../polynomials.txt", 100);
 
-// 10x^4 + -8x^3 + -45x^2 + -28x + -40 = 0
-//PolynomialEquation p(10, -8, -45, -28, -40);
-//auto roots = p.solve();
-//std::cout << roots[0] << ' ' << roots[1] << ' ' << roots[2]  << ' ' << roots[3] << std::endl;
-
 //    PolynomialSolver("/Users/shwei/CLionProjects/ShweiCompleX/polynomials.txt", "../polynomials_my_out.txt");
 
-//std::vector<Complex<double>> main_row;
-//std::vector<Complex<double>> free_coefs;
-
+//GenerateCirculantMatrix("../my_matrix.txt");
+//
 //CirculantMatrix cm("../my_matrix.txt");
 //
 //cm.solve_and_output("../shweicomplex_matrix_solutions.txt");
 
-GenerateCirculantMatrix("../my_matrix.txt");
+double coefs[5] = {1.0, 2.0, 3.0, 4.0, 5.0};
+C_PolynomialEquation* cpolynom = PolynomialEquation_create(coefs, 5);
 
-CirculantMatrix cm("../my_matrix.txt");
+int degree = cpolynom->get_equation_type(cpolynom);
+printf("Degree: %d\n", degree);
 
-cm.solve_and_output("../shweicomplex_matrix_solutions.txt");
+std::cout << degree << std::endl;
 
-//cm.output();
+int root_count = 0;
+c_double_complex* roots = cpolynom->solve(cpolynom, &root_count);
 
-//CirculantMatrix cm(main_row, free_coefs);
+if (roots) {
+    std::cout << "Roots:" << std::endl;
+    for (int i = 0; i < root_count; i++) {
+        std::cout << "Root " << i + 1 << ": "
+                  << roots[i].real() << " + " << roots[i].imag() << "i"
+                  << std::endl;
+    }
+    free(roots);
+} else {
+    free(roots);
+    std::cout << "No roots found." << std::endl;
+}
 
-//auto solutions = cm.solve();
 
-//for (Complex<double> value: solutions){
-//    std::cout << value << ", ";
-//}
-
-//Complex c(1.0);
-//
-//auto rootsn = c.roots(8);
-//
-//for (Complex root: rootsn){
-//    std::cout << root << std::endl;
-//}
+PolynomialEquation_destroy(cpolynom);
 
 }
