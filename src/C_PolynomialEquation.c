@@ -155,7 +155,7 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
     c_double_complex c = self->coefficients[3]; // Linear term
     c_double_complex d = self->coefficients[4]; // Constant term
 
-    printf("Initialised coefficients: %lf %lf %lf %lf\n", creal(a), creal(b), creal(c), creal(d));
+//    printf("Initialised coefficients: %lf %lf %lf %lf\n", creal(a), creal(b), creal(c), creal(d));
 
     if (a == 0.0) {
         *root_count = 0;
@@ -165,24 +165,24 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
     c_double_complex p = (3.0 * a * c - b * b) / (3.0 * a * a);
     c_double_complex q = (2.0 * b * b * b - 9.0 * a * b * c + 27.0 * a * a * d) / (27.0 * a * a * a);
 
-    printf("p = %lf\n", creal(p));
-    printf("q = %lf\n", creal(q));
+//    printf("p = %lf\n", creal(p));
+//    printf("q = %lf\n", creal(q));
 
     c_double_complex discriminant = (q * q) / 4.0 + (p * p * p) / 27.0;
 
-    printf("discriminant = %lf\n", creal(discriminant));
+//    printf("discriminant = %lf\n", creal(discriminant));
 
     c_double_complex discriminant_root = csqrt(discriminant);
 
-    printf("discriminant root = %lf + %lfi\n", creal(discriminant_root), cimag(discriminant_root));
+//    printf("discriminant root = %lf + %lfi\n", creal(discriminant_root), cimag(discriminant_root));
 
     if (creal(discriminant) > 0) {
-        printf("You are dealing with case d>0, specifically d = %lf\n", creal(discriminant));
+//        printf("You are dealing with case d>0, specifically d = %lf\n", creal(discriminant));
         c_double_complex u = compute_real_or_complex_cbrt(-q / 2.0 + discriminant_root);
         c_double_complex v = compute_real_or_complex_cbrt(-q / 2.0 - discriminant_root);
 
-        printf("u = %lf\n", creal(u));
-        printf("v = %lf\n", creal(v));
+//        printf("u = %lf\n", creal(u));
+//        printf("v = %lf\n", creal(v));
 
         roots[0] = u + v;
 //        printf("Root 0: %lf + %lfi\n", creal(roots[0]), cimag(roots[0]));
@@ -193,24 +193,25 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
         roots[2] = -(u + v) / 2.0 - I * safe_csqrt(3.0) / 2.0 * (u - v);
 //        printf("Root 2: %lf + %lfi\n", creal(roots[2]), cimag(roots[2]));
     } else if (creal(discriminant) == 0) {
-        printf("You are dealing with case d=0, specifically d = %lf", creal(discriminant));
+//        printf("You are dealing with case d=0, specifically d = %lf", creal(discriminant));
         c_double_complex u = compute_real_or_complex_cbrt(-q / 2.0);
 
         roots[0] = 2.0 * u;
         roots[1] = -u;
         roots[2] = -u;
     } else {
-        printf("You are dealing with case d<0, specifically d = %lf\n", creal(discriminant));
+//        printf("You are dealing with case d<0, specifically d = %lf\n", creal(discriminant));
 
         double r = 2.0 * csqrt(-creal(p) / 3.0);
-        printf("r = %lf\n", r);
+//        printf("r = %lf\n", r);
 
-        double theta_arg = (3.0 * q) / (2.0 * p * sqrt(-3.0 / p));
+        double theta_arg = (3.0 * creal(q)) / (2.0 * creal(p)) * sqrt(-3.0 / creal(p));
+//        printf("theta arg = %lf\n", theta_arg);
         if (theta_arg > 1.0) theta_arg = 1.0;
         if (theta_arg < -1.0) theta_arg = -1.0;
 
         double theta = acos(theta_arg);
-        printf("theta = %lf\n", theta);
+//        printf("theta = %lf\n", theta);
         roots[0] = r * cos(theta / 3.0);
         roots[1] = r * cos((theta + 2.0 * M_PI) / 3.0);
         roots[2] = r * cos((theta + 4.0 * M_PI) / 3.0);
@@ -220,12 +221,12 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
     for (int i = 0; i < 3; i++) {
         roots[i] += shift;
     }
-
-    printf("Root 0: %lf + %lfi\n", creal(roots[0]), cimag(roots[0]));
-
-    printf("Root 1: %lf + %lfi\n", creal(roots[1]), cimag(roots[1]));
-
-    printf("Root 2: %lf + %lfi\n", creal(roots[2]), cimag(roots[2]));
+//
+//    printf("Root 0: %lf + %lfi\n", creal(roots[0]), cimag(roots[0]));
+//
+//    printf("Root 1: %lf + %lfi\n", creal(roots[1]), cimag(roots[1]));
+//
+//    printf("Root 2: %lf + %lfi\n", creal(roots[2]), cimag(roots[2]));
 
     *root_count = 3;
 }
