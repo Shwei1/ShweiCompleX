@@ -13,7 +13,7 @@ void PolynomialSolver(const std::string& filename_in, const std::string& filenam
         throw std::runtime_error("Could not open the file.");
     }
 
-
+    auto start = std::chrono::high_resolution_clock::now();
     std::string line;
     while (std::getline(f_in, line)) {
         int coefficients[5] = {0, 0, 0, 0, 0};
@@ -41,7 +41,6 @@ void PolynomialSolver(const std::string& filename_in, const std::string& filenam
             }
         }
 
-        auto start = std::chrono::high_resolution_clock::now();
 
         PolynomialEquation polynomial(coefficients[0], coefficients[1], coefficients[2], coefficients[3], coefficients[4]);
         auto roots = polynomial.solve();
@@ -62,12 +61,11 @@ void PolynomialSolver(const std::string& filename_in, const std::string& filenam
         }
         f_out << ")\n\n";
 
-        auto end = std::chrono::high_resolution_clock::now();
-
-        std::chrono::duration<double> duration = end - start;
-        std::cout << "Time consumed solving the equations with ShweiCompleX: " << duration.count() << " seconds" << std::endl;
     }
 
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end - start;
+    f_out << "Time consumed solving the equations with ShweiCompleX: " << duration.count() << " seconds" << std::endl;
 
 
     f_in.close();

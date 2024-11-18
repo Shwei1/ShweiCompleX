@@ -4,7 +4,7 @@
 //#include "CirculantMatrix.hpp"
 //#include "GenerateCirculantMatrix.hpp"
 // C
-#include "C_PolynomialEquation.h"
+#include "C_PolynomialSolver.hpp"
 #include <cstdio>
 
 int main(){
@@ -19,31 +19,33 @@ int main(){
 //
 //cm.solve_and_output("../shweicomplex_matrix_solutions.txt");
 
-double coefs[5] = {1.0, -6.0, 11.0, 6.0, 0.0};
-C_PolynomialEquation* cpolynom = PolynomialEquation_create(coefs, 5);
+//double coefs[5] = {1.0, 0.0, -5.0, 0.0, 4.0};
+//C_PolynomialEquation* cpolynom = PolynomialEquation_create(coefs, 5);
+//
+//int degree = cpolynom->get_equation_type(cpolynom);
+//printf("Degree: %d\n", degree);
+//
+//std::cout << degree << std::endl;
+//
+//int root_count = 0;
+//c_double_complex* roots = cpolynom->solve(cpolynom, &root_count);
+//
+//if (roots) {
+//    std::cout << "Roots:" << std::endl;
+//    for (int i = 0; i < root_count; i++) {
+//        std::cout << "Root " << i + 1 << ": "
+//                  << roots[i].real() << " + " << roots[i].imag() << "i"
+//                  << std::endl;
+//    }
+//    free(roots);
+//} else {
+//    free(roots);
+//    std::cout << "No roots found." << std::endl;
+//}
+//
+//
+//PolynomialEquation_destroy(cpolynom);
 
-int degree = cpolynom->get_equation_type(cpolynom);
-printf("Degree: %d\n", degree);
-
-std::cout << degree << std::endl;
-
-int root_count = 0;
-c_double_complex* roots = cpolynom->solve(cpolynom, &root_count);
-
-if (roots) {
-    std::cout << "Roots:" << std::endl;
-    for (int i = 0; i < root_count; i++) {
-        std::cout << "Root " << i + 1 << ": "
-                  << roots[i].real() << " + " << roots[i].imag() << "i"
-                  << std::endl;
-    }
-    free(roots);
-} else {
-    free(roots);
-    std::cout << "No roots found." << std::endl;
-}
-
-
-PolynomialEquation_destroy(cpolynom);
+    C_PolynomialSolver("/Users/shwei/CLionProjects/ShweiCompleX/polynomials.txt", "../polynomials_complexh_out.txt");
 
 }

@@ -11,6 +11,7 @@ set(SOURCES_CPP
         src/CirculantMatrix.cpp
         src/GenerateCirculantMatrix.cpp
         src/main.cpp
+        src/C_PolynomialSolver.hpp
 )
 
 set(SOURCES_C
