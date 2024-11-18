@@ -178,7 +178,7 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
 
     if (creal(discriminant) > 0) {
         printf("You are dealing with case d>0, specifically d = %lf\n", creal(discriminant));
-        c_double_complex u = cpow(-q / 2.0 + discriminant_root, 1.0 / 3.0);
+        c_double_complex u = compute_real_or_complex_cbrt(-q / 2.0 + discriminant_root);
         c_double_complex v = compute_real_or_complex_cbrt(-q / 2.0 - discriminant_root);
 
         printf("u = %lf\n", creal(u));
@@ -194,7 +194,7 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
 //        printf("Root 2: %lf + %lfi\n", creal(roots[2]), cimag(roots[2]));
     } else if (creal(discriminant) == 0) {
         printf("You are dealing with case d=0, specifically d = %lf", creal(discriminant));
-        c_double_complex u = cpow(-q / 2.0, 1.0 / 3.0);
+        c_double_complex u = compute_real_or_complex_cbrt(-q / 2.0);
 
         roots[0] = 2.0 * u;
         roots[1] = -u;

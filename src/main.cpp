@@ -19,7 +19,7 @@ int main(){
 //
 //cm.solve_and_output("../shweicomplex_matrix_solutions.txt");
 
-double coefs[5] = {0.0, -2.0, -40.0, -26.0, -41.0};
+double coefs[5] = {0.0, -3.0, 39.0, -18.0, -35.0};
 C_PolynomialEquation* cpolynom = PolynomialEquation_create(coefs, 5);
 
 int degree = cpolynom->get_equation_type(cpolynom);
