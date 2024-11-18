@@ -13,6 +13,41 @@ int get_equation_type_impl(struct C_PolynomialEquation* self) {
     return 0;
 }
 
+//Helper function
+c_double_complex compute_real_or_complex_cbrt(c_double_complex value) {
+
+    double real_part = creal(value);
+    double imag_part = cimag(value);
+
+    if (imag_part == 0.0 && real_part < 0.0) {
+        return cbrt(real_part);
+    } else {
+        return cpow(value, 1.0 / 3.0);
+    }
+}
+
+//Helper function
+c_double_complex safe_csqrt(double complex value) {
+    if (cimag(value) == 0.0 && creal(value) < 0.0) {
+        return I * sqrt(-creal(value));
+    } else {
+        return csqrt(value);
+    }
+}
+
+//Helper function
+void adjust_root_array(c_double_complex* roots, int root_count, double threshold) {
+    for (int i = 0; i < root_count; i++) {
+        double real_part = creal(roots[i]);
+        double imag_part = cimag(roots[i]);
+
+        real_part = fabs(real_part) < threshold ? 0.0 : real_part;
+        imag_part = fabs(imag_part) < threshold ? 0.0 : imag_part;
+
+        roots[i] = real_part + I * imag_part;
+    }
+}
+
 double complex* solve(struct C_PolynomialEquation* self, int* root_count) {
     if (!self || !root_count) {
         printf("Invalid arguments: self or root_count is NULL\n");
@@ -144,14 +179,19 @@ void solve_cubic_impl(struct C_PolynomialEquation* self, c_double_complex* roots
     if (creal(discriminant) > 0) {
         printf("You are dealing with case d>0, specifically d = %lf\n", creal(discriminant));
         c_double_complex u = cpow(-q / 2.0 + discriminant_root, 1.0 / 3.0);
-        c_double_complex v = cpow(-q / 2.0 - discriminant_root, 1.0 / 3.0);
+        c_double_complex v = compute_real_or_complex_cbrt(-q / 2.0 - discriminant_root);
 
         printf("u = %lf\n", creal(u));
         printf("v = %lf\n", creal(v));
 
         roots[0] = u + v;
-        roots[1] = -(u + v) / 2.0 + I * csqrt(3.0) / 2.0 * (u - v);
-        roots[2] = -(u + v) / 2.0 - I * csqrt(3.0) / 2.0 * (u - v);
+        printf("Root 0: %lf + %lfi\n", creal(roots[0]), cimag(roots[0]));
+
+        roots[1] = -(u + v) / 2.0 + I * safe_csqrt(3.0) / 2.0 * (u - v);
+        printf("Root 1: %lf + %lfi\n", creal(roots[1]), cimag(roots[1]));
+
+        roots[2] = -(u + v) / 2.0 - I * safe_csqrt(3.0) / 2.0 * (u - v);
+        printf("Root 2: %lf + %lfi\n", creal(roots[2]), cimag(roots[2]));
     } else if (creal(discriminant) == 0) {
         printf("You are dealing with case d=0\n, specifically d = %lf", creal(discriminant));
         c_double_complex u = cpow(-q / 2.0, 1.0 / 3.0);
@@ -231,7 +271,7 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
 
     c_double_complex z = resolvent_roots[0];
     for (int i = 0; i < resolvent_root_count; i++) {
-            printf("Looking at z[%d] = %lf + %lfi\n", i+1, creal(z), cimag(z));
+            printf("Looking at z[%d] = %lf + %lfi\n", i+1, creal(resolvent_roots[i]), cimag(resolvent_roots[i]));
         if (fabs(cimag(resolvent_roots[i])) < 1e-10 && creal(resolvent_roots[i]) > creal(z)) {
             z = resolvent_roots[i];
         }
@@ -243,13 +283,16 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
     PolynomialEquation_destroy(cubic_resolvent);
 
 
-    c_double_complex alpha = csqrt(2.0 * p + 2.0 * z);
+    c_double_complex alpha = safe_csqrt(2.0 * p + 2.0 * z);
 
 
     c_double_complex beta;
-    if (alpha == 0.0) {
+    if (fabs(alpha) < 1e-5) {
+        printf("dealing with alpha = 0");
+        printf("r = %lf + %lfi\n", creal(r), cimag(r));
         beta = z * z + r;
     } else {
+        printf("dealing with alpha != 0");
         beta = -q / alpha;
     }
 
@@ -281,6 +324,9 @@ void solve_quartic_impl(struct C_PolynomialEquation* self, c_double_complex* roo
     for (int i = 0; i < *root_count; i++) {
         roots[i] += shift;
     }
+
+    double threshold = 1e-8;
+    adjust_root_array(roots, *root_count, threshold);
 
     PolynomialEquation_destroy(quadratic1);
     PolynomialEquation_destroy(quadratic2);
