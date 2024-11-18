@@ -54,28 +54,29 @@ void C_PolynomialSolver(const std::string& filename_in, const std::string& filen
         for (int i = 0; i < root_count; i++){
             f_out << roots[i].real() << " + " << roots[i].imag() << "i, ";
         }
+        f_out << ")\n";
+        f_out << "\tRoots in trigonometric form: (";
+        for (int i = 0; i < root_count; i++) {
+            double r = std::sqrt(roots[i].real() * roots[i].real() + roots[i].imag() * roots[i].imag());
+            double theta = std::atan2(roots[i].imag(), roots[i].real());
+            f_out << r << " * (cos(" << theta << ") + i*sin(" << theta << ")), ";
+        }
+        f_out << ")\n";
+        f_out << "\tRoots in exponential form: (";
+        for (int i = 0; i < root_count; i++) {
+            double r = std::sqrt(roots[i].real() * roots[i].real() + roots[i].imag() * roots[i].imag());
+            double theta = std::atan2(roots[i].imag(), roots[i].real());
+            f_out << r << " * e^(i * " << theta << "), ";
+        }
         f_out << ")\n\n";
         free(roots);
-//        if (roots) {
-//            std::cout << "Roots:" << std::endl;
-//            for (int i = 0; i < root_count; i++) {
-//                std::cout << "Root " << i + 1 << ": "
-//                          << roots[i].real() << " + " << roots[i].imag() << "i"
-//                          << std::endl;
-//            }
-//            free(roots);
-//        } else {
-//            free(roots);
-//            std::cout << "No roots found." << std::endl;
-//        }
-
 
         PolynomialEquation_destroy(cpolynom);
     }
 
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = end - start;
-    f_out << "\nTime consumed solving the equations with <complex.h>: " << duration.count() << " seconds" << std::endl;
+    f_out << "Time consumed solving the equations with <complex.h>: " << duration.count() << " seconds" << std::endl;
 
 
     f_in.close();
