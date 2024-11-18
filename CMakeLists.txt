@@ -4,11 +4,12 @@ project(ShweiCompleX LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCES_CPP
-#        src/PolynomialGenerator.cpp
-#        src/PolynomialEquation.cpp
-#        src/PolynomialSolver.cpp
-#        src/CirculantMatrix.cpp
-#        src/GenerateCirculantMatrix.cpp
+        src/C_PolynomialSolver.cpp
+        src/PolynomialGenerator.cpp
+        src/PolynomialEquation.cpp
+        src/PolynomialSolver.cpp
+        src/CirculantMatrix.cpp
+        src/GenerateCirculantMatrix.cpp
         src/main.cpp
 )
 
