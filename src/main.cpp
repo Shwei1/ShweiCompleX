@@ -1,11 +1,11 @@
 #include <iostream>
 //#include "PolynomialGenerator.hpp"
-#include "PolynomialSolver.hpp"
+#include "../include/Polynomials/PolynomialSolver.hpp"
 //#include "CirculantMatrix.hpp"
 //#include "GenerateCirculantMatrix.hpp"
 // C
-#include "C_PolynomialSolver.hpp"
-#include "С_CirculantMatrixSolver.hpp"
+#include "../include/Polynomials/C_PolynomialSolver.hpp"
+#include "../include/CirculantMatrix/C_CirculantMatrixSolver.hpp"
 
 int main(){
 //    PolynomialGenerator::initialise();
@@ -13,9 +13,9 @@ int main(){
 
 //    PolynomialSolver("../polynomials.txt", "../shweicomplex_polynomials_solutions.txt");
 
-//GenerateCirculantMatrix("../my_matrix.txt");
+//GenerateCirculantMatrix("../matrix.txt");
 //
-//CirculantMatrix cm("../my_matrix.txt");
+//CirculantMatrix cm("../matrix.txt");
 //
 //cm.solve_and_output("../shweicomplex_matrix_solutions.txt");
 
@@ -23,6 +23,6 @@ int main(){
 //    C_PolynomialSolver("../polynomials.txt", "../complexh_polynomials_solutions.txt");
 
 
-    C_solve_and_output("../my_matrix.txt", "../complexh_matrix_solutions.txt");
+    C_solve_and_output("../matrix.txt", "../complexh_matrix_solutions.txt");
 
 }

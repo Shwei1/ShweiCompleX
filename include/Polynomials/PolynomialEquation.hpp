@@ -2,7 +2,7 @@
 
 #include <vector>
 #include <array>
-#include "Complex.hpp"
+#include "../Complex.hpp"
 
 /**
  * @brief Клас для задання та вирішення рівнянь до 4-го степеня.

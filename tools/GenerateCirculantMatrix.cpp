@@ -1,7 +1,7 @@
-#include "Complex.hpp"
+#include "../include/Complex.hpp"
 #include <random>
 #include <fstream>
-#include "GenerateCirculantMatrix.hpp"
+#include "../include/CirculantMatrix/GenerateCirculantMatrix.hpp"
 
 void GenerateCirculantMatrix_direct(std::vector<Complex<double>>& main_row_vector, std::vector<Complex<double>>& free_coefs_vector){
     std::random_device rd;

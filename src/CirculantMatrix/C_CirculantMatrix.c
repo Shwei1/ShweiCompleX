@@ -1,4 +1,4 @@
-#include "C_CirculantMatrix.h"
+#include "../../include/CirculantMatrix/C_CirculantMatrix.h"
 #include <complex.h>
 #include <tgmath.h>
 #include <stdlib.h>

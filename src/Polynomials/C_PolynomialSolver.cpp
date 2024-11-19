@@ -1,4 +1,4 @@
-#include "C_PolynomialEquation.h"
+#include "../../include/Polynomials/C_PolynomialEquation.h"
 #include <sstream>
 #include <fstream>
 #include <iostream>

@@ -1,4 +1,4 @@
-#include "CirculantMatrix.hpp"
+#include "../../include/CirculantMatrix/CirculantMatrix.hpp"
 #include <sstream>
 #include <chrono>
 #include <cmath>

@@ -1,6 +1,6 @@
-#include "PolynomialEquation.hpp"
-#include "Complex.hpp"
-#include "PolynomialSolver.hpp"
+#include "../../include/Polynomials/PolynomialEquation.hpp"
+#include "../../include/Complex.hpp"
+#include "../../include/Polynomials/PolynomialSolver.hpp"
 #include <fstream>
 #include <iostream>
 #include <chrono>

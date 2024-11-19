@@ -1,7 +1,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
-#include "Complex.hpp"
+#include "../Complex.hpp"
 
 /**
  * @brief Клас системи лінійних рівнянь, заданих циркулюючою матрицею, що інкапсулює в собі методи, для її вирішення.

@@ -2,7 +2,7 @@
 #include <tgmath.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "C_PolynomialEquation.h"
+#include "../../include/Polynomials/C_PolynomialEquation.h"
 
 int get_equation_type_impl(struct C_PolynomialEquation* self) {
     for (int i = 0; i < 5; i++) {

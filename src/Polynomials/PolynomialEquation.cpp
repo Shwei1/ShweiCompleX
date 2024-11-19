@@ -1,5 +1,5 @@
-#include "PolynomialEquation.hpp"
-#include "Complex.hpp"
+#include "../../include/Polynomials/PolynomialEquation.hpp"
+#include "../../include/Complex.hpp"
 #include <cmath>
 
 PolynomialEquation::PolynomialEquation(ComplexType a, ComplexType b, ComplexType c, ComplexType d, ComplexType e)
