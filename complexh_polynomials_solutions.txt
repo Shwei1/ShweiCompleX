@@ -498,4 +498,4 @@
 	Roots in trigonometric form: (1.04 * (cos(3.14159) + i*sin(3.14159)), )
 	Roots in exponential form: (1.04 * e^(i * 3.14159), )
 
-Time consumed solving the equations with <complex.h>: 0.00178129 seconds
+Time consumed solving the equations with <complex.h>: 0.00177729 seconds
