@@ -13,6 +13,10 @@ set(SOURCES_CPP
         src/main.cpp
         include/Polynomials/C_PolynomialSolver.hpp
         include/CirculantMatrix/C_CirculantMatrixSolver.hpp
+        include/Polynomials/STL_PolynomialEquation.hpp
+        src/Polynomials/STL_PolynomialEquation.cpp
+        include/Polynomials/STL_PolynomialSolver.hpp
+        src/Polynomials/STL_PolynomialSolver.cpp
 )
 
 set(SOURCES_C
@@ -25,3 +29,5 @@ set(SOURCES_C
 add_executable(ShweiCompleX ${SOURCES_CPP} ${SOURCES_C})
 
 set_source_files_properties(${SOURCES_C} PROPERTIES LANGUAGE C)
+
+target_include_directories(ShweiCompleX PRIVATE include)

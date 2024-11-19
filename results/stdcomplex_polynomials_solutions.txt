@@ -1,501 +1,501 @@
 -33 x^2 + -49 x + -33 = 0
-	Roots in regular form: (-0.742424 - 0.66993i, -0.742424 + 0.66993i, )
+	Roots in regular form: (-0.742424 + -0.66993i, -0.742424 + 0.66993i, )
 	Roots in trigonometric form: (1 * (cos(-2.40748) + i * sin(-2.40748)), 1 * (cos(2.40748) + i * sin(2.40748)), )
 	Roots in exponential form: (1 * e^(i * -2.40748), 1 * e^(i * 2.40748), )
 
 -3 x^3 + 39 x^2 + -18 x + -35 = 0
-	Roots in regular form: (12.4424, -0.728869, 1.28645, )
+	Roots in regular form: (12.4424 + 0i, -0.728869 + 0i, 1.28645 + 0i, )
 	Roots in trigonometric form: (12.4424 * (cos(0) + i * sin(0)), 0.728869 * (cos(3.14159) + i * sin(3.14159)), 1.28645 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (12.4424 * e^(i * 0), 0.728869 * e^(i * 3.14159), 1.28645 * e^(i * 0), )
 
 39 x^4 + -17 x^3 + -11 x^2 + -37 x + 43 = 0
-	Roots in regular form: (-0.674037 + 0.873094i, -0.674037 - 0.873094i, 0.891985 + 0.332588i, 0.891985 - 0.332588i, )
+	Roots in regular form: (-0.674037 + 0.873094i, -0.674037 + -0.873094i, 0.891985 + 0.332588i, 0.891985 + -0.332588i, )
 	Roots in trigonometric form: (1.103 * (cos(2.22823) + i * sin(2.22823)), 1.103 * (cos(-2.22823) + i * sin(-2.22823)), 0.951973 * (cos(0.356895) + i * sin(0.356895)), 0.951973 * (cos(-0.356895) + i * sin(-0.356895)), )
 	Roots in exponential form: (1.103 * e^(i * 2.22823), 1.103 * e^(i * -2.22823), 0.951973 * e^(i * 0.356895), 0.951973 * e^(i * -0.356895), )
 
 5 x^3 + -21 x^2 + 45 x + 47 = 0
-	Roots in regular form: (-0.742066, 2.47103 + 2.56151i, 2.47103 - 2.56151i, )
+	Roots in regular form: (-0.742066 + 0i, 2.47103 + 2.56151i, 2.47103 + -2.56151i, )
 	Roots in trigonometric form: (0.742066 * (cos(3.14159) + i * sin(3.14159)), 3.55912 * (cos(0.803375) + i * sin(0.803375)), 3.55912 * (cos(-0.803375) + i * sin(-0.803375)), )
 	Roots in exponential form: (0.742066 * e^(i * 3.14159), 3.55912 * e^(i * 0.803375), 3.55912 * e^(i * -0.803375), )
 
 -19 x^4 + -15 x^3 + 14 x^2 + -37 x + -33 = 0
-	Roots in regular form: (-0.693483, -1.59076, 0.747386 + 1.00788i, 0.747386 - 1.00788i, )
+	Roots in regular form: (-0.693483 + 0i, -1.59076 + 0i, 0.747386 + 1.00788i, 0.747386 + -1.00788i, )
 	Roots in trigonometric form: (0.693483 * (cos(3.14159) + i * sin(3.14159)), 1.59076 * (cos(3.14159) + i * sin(3.14159)), 1.25476 * (cos(0.932732) + i * sin(0.932732)), 1.25476 * (cos(-0.932732) + i * sin(-0.932732)), )
 	Roots in exponential form: (0.693483 * e^(i * 3.14159), 1.59076 * e^(i * 3.14159), 1.25476 * e^(i * 0.932732), 1.25476 * e^(i * -0.932732), )
 
 40 x + -19 = 0
-	Roots in regular form: (0.475, )
+	Roots in regular form: (0.475 + -0i, )
 	Roots in trigonometric form: (0.475 * (cos(-0) + i * sin(-0)), )
 	Roots in exponential form: (0.475 * e^(i * -0), )
 
 -33 x^3 + -43 x^2 + -35 x + 3 = 0
-	Roots in regular form: (0.0778281, -0.690429 + 0.831495i, -0.690429 - 0.831495i, )
+	Roots in regular form: (0.0778281 + 0i, -0.690429 + 0.831495i, -0.690429 + -0.831495i, )
 	Roots in trigonometric form: (0.0778281 * (cos(0) + i * sin(0)), 1.08078 * (cos(2.26377) + i * sin(2.26377)), 1.08078 * (cos(-2.26377) + i * sin(-2.26377)), )
 	Roots in exponential form: (0.0778281 * e^(i * 0), 1.08078 * e^(i * 2.26377), 1.08078 * e^(i * -2.26377), )
 
 49 x^3 + -25 x^2 + 48 x + -29 = 0
-	Roots in regular form: (0.580139, -0.0349674 + 1.00943i, -0.0349674 - 1.00943i, )
+	Roots in regular form: (0.580139 + 0i, -0.0349674 + 1.00943i, -0.0349674 + -1.00943i, )
 	Roots in trigonometric form: (0.580139 * (cos(0) + i * sin(0)), 1.01003 * (cos(1.60542) + i * sin(1.60542)), 1.01003 * (cos(-1.60542) + i * sin(-1.60542)), )
 	Roots in exponential form: (0.580139 * e^(i * 0), 1.01003 * e^(i * 1.60542), 1.01003 * e^(i * -1.60542), )
 
 -38 x^2 + 29 x + 31 = 0
-	Roots in regular form: (-0.598927, 1.36208, )
+	Roots in regular form: (-0.598927 + -0i, 1.36208 + 0i, )
 	Roots in trigonometric form: (0.598927 * (cos(-3.14159) + i * sin(-3.14159)), 1.36208 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (0.598927 * e^(i * -3.14159), 1.36208 * e^(i * 0), )
 
 -1 x^4 + -29 x^3 + -8 x^2 + -31 x + -11 = 0
-	Roots in regular form: (-0.347254, -28.7588, 0.0530491 + 1.04817i, 0.0530491 - 1.04817i, )
+	Roots in regular form: (-0.347254 + 0i, -28.7588 + 0i, 0.0530491 + 1.04817i, 0.0530491 + -1.04817i, )
 	Roots in trigonometric form: (0.347254 * (cos(3.14159) + i * sin(3.14159)), 28.7588 * (cos(3.14159) + i * sin(3.14159)), 1.04951 * (cos(1.52023) + i * sin(1.52023)), 1.04951 * (cos(-1.52023) + i * sin(-1.52023)), )
 	Roots in exponential form: (0.347254 * e^(i * 3.14159), 28.7588 * e^(i * 3.14159), 1.04951 * e^(i * 1.52023), 1.04951 * e^(i * -1.52023), )
 
 -22 x^3 + -14 x^2 + -25 x + -34 = 0
-	Roots in regular form: (-1.01567, 0.189653 + 1.21887i, 0.189653 - 1.21887i, )
+	Roots in regular form: (-1.01567 + 0i, 0.189653 + 1.21887i, 0.189653 + -1.21887i, )
 	Roots in trigonometric form: (1.01567 * (cos(3.14159) + i * sin(3.14159)), 1.23354 * (cos(1.41644) + i * sin(1.41644)), 1.23354 * (cos(-1.41644) + i * sin(-1.41644)), )
 	Roots in exponential form: (1.01567 * e^(i * 3.14159), 1.23354 * e^(i * 1.41644), 1.23354 * e^(i * -1.41644), )
 
 25 x + -41 = 0
-	Roots in regular form: (1.64, )
+	Roots in regular form: (1.64 + -0i, )
 	Roots in trigonometric form: (1.64 * (cos(-0) + i * sin(-0)), )
 	Roots in exponential form: (1.64 * e^(i * -0), )
 
 -47 x + 29 = 0
-	Roots in regular form: (0.617021, )
+	Roots in regular form: (0.617021 + 0i, )
 	Roots in trigonometric form: (0.617021 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (0.617021 * e^(i * 0), )
 
 40 x^4 + 21 x^3 + -23 x^2 + 17 x + -19 = 0
-	Roots in regular form: (0.721249, -1.36311, 0.0584294 + 0.692627i, 0.0584294 - 0.692627i, )
+	Roots in regular form: (0.721249 + 0i, -1.36311 + 0i, 0.0584294 + 0.692627i, 0.0584294 + -0.692627i, )
 	Roots in trigonometric form: (0.721249 * (cos(0) + i * sin(0)), 1.36311 * (cos(3.14159) + i * sin(3.14159)), 0.695087 * (cos(1.48664) + i * sin(1.48664)), 0.695087 * (cos(-1.48664) + i * sin(-1.48664)), )
 	Roots in exponential form: (0.721249 * e^(i * 0), 1.36311 * e^(i * 3.14159), 0.695087 * e^(i * 1.48664), 0.695087 * e^(i * -1.48664), )
 
 -44 x^2 + 24 x + -39 = 0
-	Roots in regular form: (0.272727 - 0.901101i, 0.272727 + 0.901101i, )
+	Roots in regular form: (0.272727 + -0.901101i, 0.272727 + 0.901101i, )
 	Roots in trigonometric form: (0.941469 * (cos(-1.2769) + i * sin(-1.2769)), 0.941469 * (cos(1.2769) + i * sin(1.2769)), )
 	Roots in exponential form: (0.941469 * e^(i * -1.2769), 0.941469 * e^(i * 1.2769), )
 
 12 x + 31 = 0
-	Roots in regular form: (-2.58333, )
+	Roots in regular form: (-2.58333 + 0i, )
 	Roots in trigonometric form: (2.58333 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (2.58333 * e^(i * 3.14159), )
 
 8 x^2 + -45 x + -30 = 0
-	Roots in regular form: (6.2272, -0.602197, )
-	Roots in trigonometric form: (6.2272 * (cos(0) + i * sin(0)), 0.602197 * (cos(3.14159) + i * sin(3.14159)), )
-	Roots in exponential form: (6.2272 * e^(i * 0), 0.602197 * e^(i * 3.14159), )
+	Roots in regular form: (6.2272 + -0i, -0.602197 + 0i, )
+	Roots in trigonometric form: (6.2272 * (cos(-0) + i * sin(-0)), 0.602197 * (cos(3.14159) + i * sin(3.14159)), )
+	Roots in exponential form: (6.2272 * e^(i * -0), 0.602197 * e^(i * 3.14159), )
 
 -9 x + -49 = 0
-	Roots in regular form: (-5.44444, )
+	Roots in regular form: (-5.44444 + 0i, )
 	Roots in trigonometric form: (5.44444 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (5.44444 * e^(i * 3.14159), )
 
 1 x^3 + 34 x^2 + 19 x + -22 = 0
-	Roots in regular form: (0.568947, -33.4116, -1.15732, )
+	Roots in regular form: (0.568947 + 0i, -33.4116 + 0i, -1.15732 + 0i, )
 	Roots in trigonometric form: (0.568947 * (cos(0) + i * sin(0)), 33.4116 * (cos(3.14159) + i * sin(3.14159)), 1.15732 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.568947 * e^(i * 0), 33.4116 * e^(i * 3.14159), 1.15732 * e^(i * 3.14159), )
 
 -39 x^3 + -35 x^2 + 9 x + 9 = 0
-	Roots in regular form: (0.497729, -0.849163, -0.546002, )
+	Roots in regular form: (0.497729 + 0i, -0.849163 + 0i, -0.546002 + 0i, )
 	Roots in trigonometric form: (0.497729 * (cos(0) + i * sin(0)), 0.849163 * (cos(3.14159) + i * sin(3.14159)), 0.546002 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.497729 * e^(i * 0), 0.849163 * e^(i * 3.14159), 0.546002 * e^(i * 3.14159), )
 
 7 x + 12 = 0
-	Roots in regular form: (-1.71429, )
+	Roots in regular form: (-1.71429 + 0i, )
 	Roots in trigonometric form: (1.71429 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.71429 * e^(i * 3.14159), )
 
 -20 x^4 + 20 x^3 + -14 x^2 + -2 x + 16 = 0
-	Roots in regular form: (1, -0.684564, 0.342282 + 1.02541i, 0.342282 - 1.02541i, )
+	Roots in regular form: (1 + 0i, -0.684564 + 0i, 0.342282 + 1.02541i, 0.342282 + -1.02541i, )
 	Roots in trigonometric form: (1 * (cos(0) + i * sin(0)), 0.684564 * (cos(3.14159) + i * sin(3.14159)), 1.08103 * (cos(1.24863) + i * sin(1.24863)), 1.08103 * (cos(-1.24863) + i * sin(-1.24863)), )
 	Roots in exponential form: (1 * e^(i * 0), 0.684564 * e^(i * 3.14159), 1.08103 * e^(i * 1.24863), 1.08103 * e^(i * -1.24863), )
 
 -25 x^4 + 47 x^3 + -37 x^2 + -46 x + -47 = 0
-	Roots in regular form: (-0.465274 + 0.55709i, -0.465274 - 0.55709i, 1.40527 + 1.26243i, 1.40527 - 1.26243i, )
+	Roots in regular form: (-0.465274 + 0.55709i, -0.465274 + -0.55709i, 1.40527 + 1.26243i, 1.40527 + -1.26243i, )
 	Roots in trigonometric form: (0.72583 * (cos(2.26663) + i * sin(2.26663)), 0.72583 * (cos(-2.26663) + i * sin(-2.26663)), 1.88905 * (cos(0.731903) + i * sin(0.731903)), 1.88905 * (cos(-0.731903) + i * sin(-0.731903)), )
 	Roots in exponential form: (0.72583 * e^(i * 2.26663), 0.72583 * e^(i * -2.26663), 1.88905 * e^(i * 0.731903), 1.88905 * e^(i * -0.731903), )
 
 -32 x^4 + -48 x^3 + -45 x^2 + -18 x + 14 = 0
-	Roots in regular form: (-0.397891 + 1.02455i, -0.397891 - 1.02455i, 0.345133, -1.04935, )
+	Roots in regular form: (-0.397891 + 1.02455i, -0.397891 + -1.02455i, 0.345133 + 0i, -1.04935 + 0i, )
 	Roots in trigonometric form: (1.0991 * (cos(1.94123) + i * sin(1.94123)), 1.0991 * (cos(-1.94123) + i * sin(-1.94123)), 0.345133 * (cos(0) + i * sin(0)), 1.04935 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.0991 * e^(i * 1.94123), 1.0991 * e^(i * -1.94123), 0.345133 * e^(i * 0), 1.04935 * e^(i * 3.14159), )
 
 -36 x^3 + 35 x^2 + 27 x + -46 = 0
-	Roots in regular form: (-1.01308, 0.992652 + 0.52528i, 0.992652 - 0.52528i, )
+	Roots in regular form: (-1.01308 + 0i, 0.992652 + 0.52528i, 0.992652 + -0.52528i, )
 	Roots in trigonometric form: (1.01308 * (cos(3.14159) + i * sin(3.14159)), 1.12307 * (cos(0.486709) + i * sin(0.486709)), 1.12307 * (cos(-0.486709) + i * sin(-0.486709)), )
 	Roots in exponential form: (1.01308 * e^(i * 3.14159), 1.12307 * e^(i * 0.486709), 1.12307 * e^(i * -0.486709), )
 
 -32 x + -32 = 0
-	Roots in regular form: (-1, )
+	Roots in regular form: (-1 + 0i, )
 	Roots in trigonometric form: (1 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1 * e^(i * 3.14159), )
 
 -12 x^4 + -22 x^3 + 18 x^2 + -27 x + -39 = 0
-	Roots in regular form: (-0.793605, -2.56699, 0.763632 + 1.00609i, 0.763632 - 1.00609i, )
+	Roots in regular form: (-0.793605 + 0i, -2.56699 + 0i, 0.763632 + 1.00609i, 0.763632 + -1.00609i, )
 	Roots in trigonometric form: (0.793605 * (cos(3.14159) + i * sin(3.14159)), 2.56699 * (cos(3.14159) + i * sin(3.14159)), 1.26307 * (cos(0.921552) + i * sin(0.921552)), 1.26307 * (cos(-0.921552) + i * sin(-0.921552)), )
 	Roots in exponential form: (0.793605 * e^(i * 3.14159), 2.56699 * e^(i * 3.14159), 1.26307 * e^(i * 0.921552), 1.26307 * e^(i * -0.921552), )
 
 -2 x^3 + -41 x^2 + 14 x + -29 = 0
-	Roots in regular form: (-20.8687, 0.184362 + 0.812915i, 0.184362 - 0.812915i, )
+	Roots in regular form: (-20.8687 + 0i, 0.184362 + 0.812915i, 0.184362 + -0.812915i, )
 	Roots in trigonometric form: (20.8687 * (cos(3.14159) + i * sin(3.14159)), 0.833558 * (cos(1.34778) + i * sin(1.34778)), 0.833558 * (cos(-1.34778) + i * sin(-1.34778)), )
 	Roots in exponential form: (20.8687 * e^(i * 3.14159), 0.833558 * e^(i * 1.34778), 0.833558 * e^(i * -1.34778), )
 
 32 x^2 + -22 x + 28 = 0
-	Roots in regular form: (0.34375 - 0.869963i, 0.34375 + 0.869963i, )
+	Roots in regular form: (0.34375 + -0.869963i, 0.34375 + 0.869963i, )
 	Roots in trigonometric form: (0.935414 * (cos(-1.19449) + i * sin(-1.19449)), 0.935414 * (cos(1.19449) + i * sin(1.19449)), )
 	Roots in exponential form: (0.935414 * e^(i * -1.19449), 0.935414 * e^(i * 1.19449), )
 
 -33 x^3 + 20 x^2 + 2 x + -15 = 0
-	Roots in regular form: (-0.631126, 0.618593 + 0.580996i, 0.618593 - 0.580996i, )
+	Roots in regular form: (-0.631126 + 0i, 0.618593 + 0.580996i, 0.618593 + -0.580996i, )
 	Roots in trigonometric form: (0.631126 * (cos(3.14159) + i * sin(3.14159)), 0.848654 * (cos(0.754067) + i * sin(0.754067)), 0.848654 * (cos(-0.754067) + i * sin(-0.754067)), )
 	Roots in exponential form: (0.631126 * e^(i * 3.14159), 0.848654 * e^(i * 0.754067), 0.848654 * e^(i * -0.754067), )
 
 -13 x^2 + -34 x + -47 = 0
-	Roots in regular form: (-1.30769 - 1.38034i, -1.30769 + 1.38034i, )
+	Roots in regular form: (-1.30769 + -1.38034i, -1.30769 + 1.38034i, )
 	Roots in trigonometric form: (1.90142 * (cos(-2.32918) + i * sin(-2.32918)), 1.90142 * (cos(2.32918) + i * sin(2.32918)), )
 	Roots in exponential form: (1.90142 * e^(i * -2.32918), 1.90142 * e^(i * 2.32918), )
 
 -41 x^4 + 10 x^3 + -29 x^2 + 7 x + 42 = 0
-	Roots in regular form: (0.0408605 + 1.18967i, 0.0408605 - 1.18967i, 0.935203, -0.773021, )
+	Roots in regular form: (0.0408605 + 1.18967i, 0.0408605 + -1.18967i, 0.935203 + 0i, -0.773021 + 0i, )
 	Roots in trigonometric form: (1.19038 * (cos(1.53646) + i * sin(1.53646)), 1.19038 * (cos(-1.53646) + i * sin(-1.53646)), 0.935203 * (cos(0) + i * sin(0)), 0.773021 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.19038 * e^(i * 1.53646), 1.19038 * e^(i * -1.53646), 0.935203 * e^(i * 0), 0.773021 * e^(i * 3.14159), )
 
 -15 x^2 + -12 x + 3 = 0
-	Roots in regular form: (-1, 0.2, )
-	Roots in trigonometric form: (1 * (cos(-3.14159) + i * sin(-3.14159)), 0.2 * (cos(0) + i * sin(0)), )
-	Roots in exponential form: (1 * e^(i * -3.14159), 0.2 * e^(i * 0), )
+	Roots in regular form: (-1 + 0i, 0.2 + 0i, )
+	Roots in trigonometric form: (1 * (cos(3.14159) + i * sin(3.14159)), 0.2 * (cos(0) + i * sin(0)), )
+	Roots in exponential form: (1 * e^(i * 3.14159), 0.2 * e^(i * 0), )
 
 -21 x^2 + -46 x + 38 = 0
-	Roots in regular form: (-2.82991, 0.639429, )
-	Roots in trigonometric form: (2.82991 * (cos(-3.14159) + i * sin(-3.14159)), 0.639429 * (cos(0) + i * sin(0)), )
-	Roots in exponential form: (2.82991 * e^(i * -3.14159), 0.639429 * e^(i * 0), )
+	Roots in regular form: (-2.82991 + 0i, 0.639429 + 0i, )
+	Roots in trigonometric form: (2.82991 * (cos(3.14159) + i * sin(3.14159)), 0.639429 * (cos(0) + i * sin(0)), )
+	Roots in exponential form: (2.82991 * e^(i * 3.14159), 0.639429 * e^(i * 0), )
 
 -43 x^2 + 8 x + 38 = 0
-	Roots in regular form: (-0.851632, 1.03768, )
+	Roots in regular form: (-0.851632 + -0i, 1.03768 + 0i, )
 	Roots in trigonometric form: (0.851632 * (cos(-3.14159) + i * sin(-3.14159)), 1.03768 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (0.851632 * e^(i * -3.14159), 1.03768 * e^(i * 0), )
 
 -35 x^2 + 46 x + -16 = 0
-	Roots in regular form: (0.657143 - 0.159079i, 0.657143 + 0.159079i, )
+	Roots in regular form: (0.657143 + -0.159079i, 0.657143 + 0.159079i, )
 	Roots in trigonometric form: (0.676123 * (cos(-0.237508) + i * sin(-0.237508)), 0.676123 * (cos(0.237508) + i * sin(0.237508)), )
 	Roots in exponential form: (0.676123 * e^(i * -0.237508), 0.676123 * e^(i * 0.237508), )
 
 -31 x + 5 = 0
-	Roots in regular form: (0.16129, )
+	Roots in regular form: (0.16129 + 0i, )
 	Roots in trigonometric form: (0.16129 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (0.16129 * e^(i * 0), )
 
 -24 x + 20 = 0
-	Roots in regular form: (0.833333, )
+	Roots in regular form: (0.833333 + 0i, )
 	Roots in trigonometric form: (0.833333 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (0.833333 * e^(i * 0), )
 
 34 x^4 + -13 x^3 + 42 x^2 + 16 x + 44 = 0
-	Roots in regular form: (-0.458424 + 0.762494i, -0.458424 - 0.762494i, 0.649601 + 1.10133i, 0.649601 - 1.10133i, )
+	Roots in regular form: (-0.458424 + 0.762494i, -0.458424 + -0.762494i, 0.649601 + 1.10133i, 0.649601 + -1.10133i, )
 	Roots in trigonometric form: (0.889691 * (cos(2.11211) + i * sin(2.11211)), 0.889691 * (cos(-2.11211) + i * sin(-2.11211)), 1.27864 * (cos(1.03789) + i * sin(1.03789)), 1.27864 * (cos(-1.03789) + i * sin(-1.03789)), )
 	Roots in exponential form: (0.889691 * e^(i * 2.11211), 0.889691 * e^(i * -2.11211), 1.27864 * e^(i * 1.03789), 1.27864 * e^(i * -1.03789), )
 
 23 x^2 + -49 x + -4 = 0
-	Roots in regular form: (2.20916, -0.0787237, )
-	Roots in trigonometric form: (2.20916 * (cos(0) + i * sin(0)), 0.0787237 * (cos(3.14159) + i * sin(3.14159)), )
-	Roots in exponential form: (2.20916 * e^(i * 0), 0.0787237 * e^(i * 3.14159), )
+	Roots in regular form: (2.20916 + -0i, -0.0787237 + 0i, )
+	Roots in trigonometric form: (2.20916 * (cos(-0) + i * sin(-0)), 0.0787237 * (cos(3.14159) + i * sin(3.14159)), )
+	Roots in exponential form: (2.20916 * e^(i * -0), 0.0787237 * e^(i * 3.14159), )
 
 46 x^3 + 15 x^2 + 5 x + 9 = 0
-	Roots in regular form: (-0.637279, 0.155596 + 0.531791i, 0.155596 - 0.531791i, )
+	Roots in regular form: (-0.637279 + 0i, 0.155596 + 0.531791i, 0.155596 + -0.531791i, )
 	Roots in trigonometric form: (0.637279 * (cos(3.14159) + i * sin(3.14159)), 0.554086 * (cos(1.28615) + i * sin(1.28615)), 0.554086 * (cos(-1.28615) + i * sin(-1.28615)), )
 	Roots in exponential form: (0.637279 * e^(i * 3.14159), 0.554086 * e^(i * 1.28615), 0.554086 * e^(i * -1.28615), )
 
 47 x^3 + -12 x^2 + -22 x + -13 = 0
-	Roots in regular form: (1, -0.37234 + 0.371427i, -0.37234 - 0.371427i, )
+	Roots in regular form: (1 + 0i, -0.37234 + 0.371427i, -0.37234 + -0.371427i, )
 	Roots in trigonometric form: (1 * (cos(0) + i * sin(0)), 0.525924 * (cos(2.35742) + i * sin(2.35742)), 0.525924 * (cos(-2.35742) + i * sin(-2.35742)), )
 	Roots in exponential form: (1 * e^(i * 0), 0.525924 * e^(i * 2.35742), 0.525924 * e^(i * -2.35742), )
 
 23 x^4 + 48 x^3 + 12 x^2 + -29 x + 28 = 0
-	Roots in regular form: (-1.49807 + 0.754179i, -1.49807 - 0.754179i, 0.45459 + 0.475523i, 0.45459 - 0.475523i, )
+	Roots in regular form: (-1.49807 + 0.754179i, -1.49807 + -0.754179i, 0.45459 + 0.475523i, 0.45459 + -0.475523i, )
 	Roots in trigonometric form: (1.6772 * (cos(2.6752) + i * sin(2.6752)), 1.6772 * (cos(-2.6752) + i * sin(-2.6752)), 0.657856 * (cos(0.8079) + i * sin(0.8079)), 0.657856 * (cos(-0.8079) + i * sin(-0.8079)), )
 	Roots in exponential form: (1.6772 * e^(i * 2.6752), 1.6772 * e^(i * -2.6752), 0.657856 * e^(i * 0.8079), 0.657856 * e^(i * -0.8079), )
 
 16 x + -48 = 0
-	Roots in regular form: (3, )
+	Roots in regular form: (3 + -0i, )
 	Roots in trigonometric form: (3 * (cos(-0) + i * sin(-0)), )
 	Roots in exponential form: (3 * e^(i * -0), )
 
 10 x^4 + -47 x^3 + -46 x^2 + 41 x + -20 = 0
-	Roots in regular form: (0.339641 + 0.384696i, 0.339641 - 0.384696i, 5.42153, -1.40081, )
+	Roots in regular form: (0.339641 + 0.384696i, 0.339641 + -0.384696i, 5.42153 + 0i, -1.40081 + 0i, )
 	Roots in trigonometric form: (0.513173 * (cos(0.847519) + i * sin(0.847519)), 0.513173 * (cos(-0.847519) + i * sin(-0.847519)), 5.42153 * (cos(0) + i * sin(0)), 1.40081 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.513173 * e^(i * 0.847519), 0.513173 * e^(i * -0.847519), 5.42153 * e^(i * 0), 1.40081 * e^(i * 3.14159), )
 
 1 x^4 + -20 x^3 + 35 x^2 + 8 x + 15 = 0
-	Roots in regular form: (-0.181574 + 0.569079i, -0.181574 - 0.569079i, 18.0318, 2.33132, )
+	Roots in regular form: (-0.181574 + 0.569079i, -0.181574 + -0.569079i, 18.0318 + 0i, 2.33132 + 0i, )
 	Roots in trigonometric form: (0.597344 * (cos(1.87965) + i * sin(1.87965)), 0.597344 * (cos(-1.87965) + i * sin(-1.87965)), 18.0318 * (cos(0) + i * sin(0)), 2.33132 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (0.597344 * e^(i * 1.87965), 0.597344 * e^(i * -1.87965), 18.0318 * e^(i * 0), 2.33132 * e^(i * 0), )
 
 37 x^3 + -18 x^2 + 19 x + 35 = 0
-	Roots in regular form: (-0.701913, 0.5942 + 0.997293i, 0.5942 - 0.997293i, )
+	Roots in regular form: (-0.701913 + 0i, 0.5942 + 0.997293i, 0.5942 + -0.997293i, )
 	Roots in trigonometric form: (0.701913 * (cos(3.14159) + i * sin(3.14159)), 1.16089 * (cos(1.03346) + i * sin(1.03346)), 1.16089 * (cos(-1.03346) + i * sin(-1.03346)), )
 	Roots in exponential form: (0.701913 * e^(i * 3.14159), 1.16089 * e^(i * 1.03346), 1.16089 * e^(i * -1.03346), )
 
 24 x^4 + 48 x^3 + 27 x^2 + -8 x + 22 = 0
-	Roots in regular form: (-1.30057 + 0.772363i, -1.30057 - 0.772363i, 0.300573 + 0.557037i, 0.300573 - 0.557037i, )
+	Roots in regular form: (-1.30057 + 0.772363i, -1.30057 + -0.772363i, 0.300573 + 0.557037i, 0.300573 + -0.557037i, )
 	Roots in trigonometric form: (1.51263 * (cos(2.6057) + i * sin(2.6057)), 1.51263 * (cos(-2.6057) + i * sin(-2.6057)), 0.632957 * (cos(1.07598) + i * sin(1.07598)), 0.632957 * (cos(-1.07598) + i * sin(-1.07598)), )
 	Roots in exponential form: (1.51263 * e^(i * 2.6057), 1.51263 * e^(i * -2.6057), 0.632957 * e^(i * 1.07598), 0.632957 * e^(i * -1.07598), )
 
 -29 x^3 + 25 x^2 + -10 x + 14 = 0
-	Roots in regular form: (1, -0.0689655 + 0.691377i, -0.0689655 - 0.691377i, )
+	Roots in regular form: (1 + 0i, -0.0689655 + 0.691377i, -0.0689655 + -0.691377i, )
 	Roots in trigonometric form: (1 * (cos(0) + i * sin(0)), 0.694808 * (cos(1.67022) + i * sin(1.67022)), 0.694808 * (cos(-1.67022) + i * sin(-1.67022)), )
 	Roots in exponential form: (1 * e^(i * 0), 0.694808 * e^(i * 1.67022), 0.694808 * e^(i * -1.67022), )
 
 -2 x^2 + 16 x + -10 = 0
-	Roots in regular form: (0.683375, 7.31662, )
+	Roots in regular form: (0.683375 + 0i, 7.31662 + 0i, )
 	Roots in trigonometric form: (0.683375 * (cos(0) + i * sin(0)), 7.31662 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (0.683375 * e^(i * 0), 7.31662 * e^(i * 0), )
 
 42 x^2 + 5 x + -9 = 0
-	Roots in regular form: (0.407198, -0.526245, )
+	Roots in regular form: (0.407198 + 0i, -0.526245 + 0i, )
 	Roots in trigonometric form: (0.407198 * (cos(0) + i * sin(0)), 0.526245 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.407198 * e^(i * 0), 0.526245 * e^(i * 3.14159), )
 
 -7 x^4 + -18 x^3 + -36 x^2 + 24 x + 14 = 0
-	Roots in regular form: (-1.47792 + 2.0973i, -1.47792 - 2.0973i, 0.77595, -0.391541, )
+	Roots in regular form: (-1.47792 + 2.0973i, -1.47792 + -2.0973i, 0.77595 + 0i, -0.391541 + 0i, )
 	Roots in trigonometric form: (2.56572 * (cos(2.18465) + i * sin(2.18465)), 2.56572 * (cos(-2.18465) + i * sin(-2.18465)), 0.77595 * (cos(0) + i * sin(0)), 0.391541 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (2.56572 * e^(i * 2.18465), 2.56572 * e^(i * -2.18465), 0.77595 * e^(i * 0), 0.391541 * e^(i * 3.14159), )
 
 28 x^4 + -26 x^3 + 22 x^2 + -40 x + -4 = 0
-	Roots in regular form: (-0.122353 + 1.08519i, -0.122353 - 1.08519i, 1.26776, -0.0944858, )
+	Roots in regular form: (-0.122353 + 1.08519i, -0.122353 + -1.08519i, 1.26776 + 0i, -0.0944858 + 0i, )
 	Roots in trigonometric form: (1.09207 * (cos(1.68307) + i * sin(1.68307)), 1.09207 * (cos(-1.68307) + i * sin(-1.68307)), 1.26776 * (cos(0) + i * sin(0)), 0.0944858 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.09207 * e^(i * 1.68307), 1.09207 * e^(i * -1.68307), 1.26776 * e^(i * 0), 0.0944858 * e^(i * 3.14159), )
 
 10 x^3 + -6 x^2 + 38 x + 12 = 0
-	Roots in regular form: (-0.295252, 0.447626 + 1.96569i, 0.447626 - 1.96569i, )
+	Roots in regular form: (-0.295252 + 0i, 0.447626 + 1.96569i, 0.447626 + -1.96569i, )
 	Roots in trigonometric form: (0.295252 * (cos(3.14159) + i * sin(3.14159)), 2.01602 * (cos(1.3469) + i * sin(1.3469)), 2.01602 * (cos(-1.3469) + i * sin(-1.3469)), )
 	Roots in exponential form: (0.295252 * e^(i * 3.14159), 2.01602 * e^(i * 1.3469), 2.01602 * e^(i * -1.3469), )
 
 -34 x^3 + -47 x^2 + -9 x + 39 = 0
-	Roots in regular form: (0.683788, -1.03307 + 0.7812i, -1.03307 - 0.7812i, )
+	Roots in regular form: (0.683788 + 0i, -1.03307 + 0.7812i, -1.03307 + -0.7812i, )
 	Roots in trigonometric form: (0.683788 * (cos(0) + i * sin(0)), 1.29519 * (cos(2.49414) + i * sin(2.49414)), 1.29519 * (cos(-2.49414) + i * sin(-2.49414)), )
 	Roots in exponential form: (0.683788 * e^(i * 0), 1.29519 * e^(i * 2.49414), 1.29519 * e^(i * -2.49414), )
 
 34 x^3 + -20 x^2 + -37 x + -35 = 0
-	Roots in regular form: (1.63708, -0.524423 + 0.594803i, -0.524423 - 0.594803i, )
+	Roots in regular form: (1.63708 + 0i, -0.524423 + 0.594803i, -0.524423 + -0.594803i, )
 	Roots in trigonometric form: (1.63708 * (cos(0) + i * sin(0)), 0.792975 * (cos(2.29339) + i * sin(2.29339)), 0.792975 * (cos(-2.29339) + i * sin(-2.29339)), )
 	Roots in exponential form: (1.63708 * e^(i * 0), 0.792975 * e^(i * 2.29339), 0.792975 * e^(i * -2.29339), )
 
 -36 x^3 + 33 x^2 + -5 x + -23 = 0
-	Roots in regular form: (-0.604101, 0.760384 + 0.692389i, 0.760384 - 0.692389i, )
+	Roots in regular form: (-0.604101 + 0i, 0.760384 + 0.692389i, 0.760384 + -0.692389i, )
 	Roots in trigonometric form: (0.604101 * (cos(3.14159) + i * sin(3.14159)), 1.02839 * (cos(0.738629) + i * sin(0.738629)), 1.02839 * (cos(-0.738629) + i * sin(-0.738629)), )
 	Roots in exponential form: (0.604101 * e^(i * 3.14159), 1.02839 * e^(i * 0.738629), 1.02839 * e^(i * -0.738629), )
 
 -36 x + -21 = 0
-	Roots in regular form: (-0.583333, )
+	Roots in regular form: (-0.583333 + 0i, )
 	Roots in trigonometric form: (0.583333 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.583333 * e^(i * 3.14159), )
 
 6 x^4 + 4 x^3 + 44 x^2 + -13 x + -18 = 0
-	Roots in regular form: (-0.448669 + 2.7781i, -0.448669 - 2.7781i, 0.74154, -0.510867, )
+	Roots in regular form: (-0.448669 + 2.7781i, -0.448669 + -2.7781i, 0.74154 + 0i, -0.510867 + 0i, )
 	Roots in trigonometric form: (2.8141 * (cos(1.73092) + i * sin(1.73092)), 2.8141 * (cos(-1.73092) + i * sin(-1.73092)), 0.74154 * (cos(0) + i * sin(0)), 0.510867 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (2.8141 * e^(i * 1.73092), 2.8141 * e^(i * -1.73092), 0.74154 * e^(i * 0), 0.510867 * e^(i * 3.14159), )
 
 -1 x^4 + 25 x^3 + 13 x^2 + -3 x + 23 = 0
-	Roots in regular form: (0.347062 + 0.794123i, 0.347062 - 0.794123i, 25.5064, -1.20057, )
+	Roots in regular form: (0.347062 + 0.794123i, 0.347062 + -0.794123i, 25.5064 + 0i, -1.20057 + 0i, )
 	Roots in trigonometric form: (0.866651 * (cos(1.15877) + i * sin(1.15877)), 0.866651 * (cos(-1.15877) + i * sin(-1.15877)), 25.5064 * (cos(0) + i * sin(0)), 1.20057 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.866651 * e^(i * 1.15877), 0.866651 * e^(i * -1.15877), 25.5064 * e^(i * 0), 1.20057 * e^(i * 3.14159), )
 
 49 x^4 + 23 x^3 + 30 x^2 + -23 x + 48 = 0
-	Roots in regular form: (-0.743438 + 0.946807i, -0.743438 - 0.946807i, 0.508744 + 0.645879i, 0.508744 - 0.645879i, )
+	Roots in regular form: (-0.743438 + 0.946807i, -0.743438 + -0.946807i, 0.508744 + 0.645879i, 0.508744 + -0.645879i, )
 	Roots in trigonometric form: (1.2038 * (cos(2.23645) + i * sin(2.23645)), 1.2038 * (cos(-2.23645) + i * sin(-2.23645)), 0.82218 * (cos(0.903615) + i * sin(0.903615)), 0.82218 * (cos(-0.903615) + i * sin(-0.903615)), )
 	Roots in exponential form: (1.2038 * e^(i * 2.23645), 1.2038 * e^(i * -2.23645), 0.82218 * e^(i * 0.903615), 0.82218 * e^(i * -0.903615), )
 
 -5 x + 34 = 0
-	Roots in regular form: (6.8, )
+	Roots in regular form: (6.8 + 0i, )
 	Roots in trigonometric form: (6.8 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (6.8 * e^(i * 0), )
 
 27 x^2 + -43 x + -31 = 0
-	Roots in regular form: (2.1313, -0.538708, )
-	Roots in trigonometric form: (2.1313 * (cos(0) + i * sin(0)), 0.538708 * (cos(3.14159) + i * sin(3.14159)), )
-	Roots in exponential form: (2.1313 * e^(i * 0), 0.538708 * e^(i * 3.14159), )
+	Roots in regular form: (2.1313 + -0i, -0.538708 + 0i, )
+	Roots in trigonometric form: (2.1313 * (cos(-0) + i * sin(-0)), 0.538708 * (cos(3.14159) + i * sin(3.14159)), )
+	Roots in exponential form: (2.1313 * e^(i * -0), 0.538708 * e^(i * 3.14159), )
 
 -16 x^3 + -20 x^2 + -4 x + 11 = 0
-	Roots in regular form: (0.552166, -0.901083 + 0.658137i, -0.901083 - 0.658137i, )
+	Roots in regular form: (0.552166 + 0i, -0.901083 + 0.658137i, -0.901083 + -0.658137i, )
 	Roots in trigonometric form: (0.552166 * (cos(0) + i * sin(0)), 1.11584 * (cos(2.51076) + i * sin(2.51076)), 1.11584 * (cos(-2.51076) + i * sin(-2.51076)), )
 	Roots in exponential form: (0.552166 * e^(i * 0), 1.11584 * e^(i * 2.51076), 1.11584 * e^(i * -2.51076), )
 
 7 x + 31 = 0
-	Roots in regular form: (-4.42857, )
+	Roots in regular form: (-4.42857 + 0i, )
 	Roots in trigonometric form: (4.42857 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (4.42857 * e^(i * 3.14159), )
 
 -8 x + -15 = 0
-	Roots in regular form: (-1.875, )
+	Roots in regular form: (-1.875 + 0i, )
 	Roots in trigonometric form: (1.875 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.875 * e^(i * 3.14159), )
 
 34 x + -44 = 0
-	Roots in regular form: (1.29412, )
+	Roots in regular form: (1.29412 + -0i, )
 	Roots in trigonometric form: (1.29412 * (cos(-0) + i * sin(-0)), )
 	Roots in exponential form: (1.29412 * e^(i * -0), )
 
 24 x^2 + 16 x + -50 = 0
-	Roots in regular form: (1.14803, -1.8147, )
+	Roots in regular form: (1.14803 + 0i, -1.8147 + 0i, )
 	Roots in trigonometric form: (1.14803 * (cos(0) + i * sin(0)), 1.8147 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.14803 * e^(i * 0), 1.8147 * e^(i * 3.14159), )
 
 3 x^2 + -8 x + -34 = 0
-	Roots in regular form: (4.95426, -2.28759, )
-	Roots in trigonometric form: (4.95426 * (cos(0) + i * sin(0)), 2.28759 * (cos(3.14159) + i * sin(3.14159)), )
-	Roots in exponential form: (4.95426 * e^(i * 0), 2.28759 * e^(i * 3.14159), )
+	Roots in regular form: (4.95426 + -0i, -2.28759 + 0i, )
+	Roots in trigonometric form: (4.95426 * (cos(-0) + i * sin(-0)), 2.28759 * (cos(3.14159) + i * sin(3.14159)), )
+	Roots in exponential form: (4.95426 * e^(i * -0), 2.28759 * e^(i * 3.14159), )
 
 -18 x + -13 = 0
-	Roots in regular form: (-0.722222, )
+	Roots in regular form: (-0.722222 + 0i, )
 	Roots in trigonometric form: (0.722222 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.722222 * e^(i * 3.14159), )
 
 -7 x^3 + -26 x^2 + -40 x + -5 = 0
-	Roots in regular form: (-0.136699, -1.78879 + 1.42318i, -1.78879 - 1.42318i, )
+	Roots in regular form: (-0.136699 + 0i, -1.78879 + 1.42318i, -1.78879 + -1.42318i, )
 	Roots in trigonometric form: (0.136699 * (cos(3.14159) + i * sin(3.14159)), 2.28588 * (cos(2.46953) + i * sin(2.46953)), 2.28588 * (cos(-2.46953) + i * sin(-2.46953)), )
 	Roots in exponential form: (0.136699 * e^(i * 3.14159), 2.28588 * e^(i * 2.46953), 2.28588 * e^(i * -2.46953), )
 
 28 x^4 + -31 x^3 + 40 x^2 + -17 x + 13 = 0
-	Roots in regular form: (0.0134959 + 0.735152i, 0.0134959 - 0.735152i, 0.540075 + 0.753063i, 0.540075 - 0.753063i, )
+	Roots in regular form: (0.0134959 + 0.735152i, 0.0134959 + -0.735152i, 0.540075 + 0.753063i, 0.540075 + -0.753063i, )
 	Roots in trigonometric form: (0.735276 * (cos(1.55244) + i * sin(1.55244)), 0.735276 * (cos(-1.55244) + i * sin(-1.55244)), 0.926707 * (cos(0.948639) + i * sin(0.948639)), 0.926707 * (cos(-0.948639) + i * sin(-0.948639)), )
 	Roots in exponential form: (0.735276 * e^(i * 1.55244), 0.735276 * e^(i * -1.55244), 0.926707 * e^(i * 0.948639), 0.926707 * e^(i * -0.948639), )
 
 -5 x^3 + -3 x^2 + 7 x + -34 = 0
-	Roots in regular form: (-2.38387, 0.891934 + 1.43421i, 0.891934 - 1.43421i, )
+	Roots in regular form: (-2.38387 + 0i, 0.891934 + 1.43421i, 0.891934 + -1.43421i, )
 	Roots in trigonometric form: (2.38387 * (cos(3.14159) + i * sin(3.14159)), 1.68894 * (cos(1.01443) + i * sin(1.01443)), 1.68894 * (cos(-1.01443) + i * sin(-1.01443)), )
 	Roots in exponential form: (2.38387 * e^(i * 3.14159), 1.68894 * e^(i * 1.01443), 1.68894 * e^(i * -1.01443), )
 
 42 x + 22 = 0
-	Roots in regular form: (-0.52381, )
+	Roots in regular form: (-0.52381 + 0i, )
 	Roots in trigonometric form: (0.52381 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.52381 * e^(i * 3.14159), )
 
 6 x^4 + 39 x^3 + 2 x^2 + -13 x + -34 = 0
-	Roots in regular form: (1, -6.41688, -0.54156 + 0.767985i, -0.54156 - 0.767985i, )
+	Roots in regular form: (1 + 0i, -6.41688 + 0i, -0.54156 + 0.767985i, -0.54156 + -0.767985i, )
 	Roots in trigonometric form: (1 * (cos(0) + i * sin(0)), 6.41688 * (cos(3.14159) + i * sin(3.14159)), 0.939727 * (cos(2.18498) + i * sin(2.18498)), 0.939727 * (cos(-2.18498) + i * sin(-2.18498)), )
 	Roots in exponential form: (1 * e^(i * 0), 6.41688 * e^(i * 3.14159), 0.939727 * e^(i * 2.18498), 0.939727 * e^(i * -2.18498), )
 
 34 x^3 + -43 x^2 + 45 x + -22 = 0
-	Roots in regular form: (0.697349, 0.283678 + 0.920549i, 0.283678 - 0.920549i, )
+	Roots in regular form: (0.697349 + 0i, 0.283678 + 0.920549i, 0.283678 + -0.920549i, )
 	Roots in trigonometric form: (0.697349 * (cos(0) + i * sin(0)), 0.963267 * (cos(1.27187) + i * sin(1.27187)), 0.963267 * (cos(-1.27187) + i * sin(-1.27187)), )
 	Roots in exponential form: (0.697349 * e^(i * 0), 0.963267 * e^(i * 1.27187), 0.963267 * e^(i * -1.27187), )
 
 -43 x + -38 = 0
-	Roots in regular form: (-0.883721, )
+	Roots in regular form: (-0.883721 + 0i, )
 	Roots in trigonometric form: (0.883721 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.883721 * e^(i * 3.14159), )
 
 39 x + -26 = 0
-	Roots in regular form: (0.666667, )
+	Roots in regular form: (0.666667 + -0i, )
 	Roots in trigonometric form: (0.666667 * (cos(-0) + i * sin(-0)), )
 	Roots in exponential form: (0.666667 * e^(i * -0), )
 
 -21 x^4 + 43 x^3 + -39 x^2 + 35 x + 44 = 0
-	Roots in regular form: (0.384301 + 1.34216i, 0.384301 - 1.34216i, 1.85769, -0.578671, )
+	Roots in regular form: (0.384301 + 1.34216i, 0.384301 + -1.34216i, 1.85769 + 0i, -0.578671 + 0i, )
 	Roots in trigonometric form: (1.39609 * (cos(1.29193) + i * sin(1.29193)), 1.39609 * (cos(-1.29193) + i * sin(-1.29193)), 1.85769 * (cos(0) + i * sin(0)), 0.578671 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.39609 * e^(i * 1.29193), 1.39609 * e^(i * -1.29193), 1.85769 * e^(i * 0), 0.578671 * e^(i * 3.14159), )
 
 34 x^3 + 9 x^2 + -20 x + 8 = 0
-	Roots in regular form: (-1.04401, 0.389654 + 0.27119i, 0.389654 - 0.27119i, )
+	Roots in regular form: (-1.04401 + 0i, 0.389654 + 0.27119i, 0.389654 + -0.27119i, )
 	Roots in trigonometric form: (1.04401 * (cos(3.14159) + i * sin(3.14159)), 0.474736 * (cos(0.60802) + i * sin(0.60802)), 0.474736 * (cos(-0.60802) + i * sin(-0.60802)), )
 	Roots in exponential form: (1.04401 * e^(i * 3.14159), 0.474736 * e^(i * 0.60802), 0.474736 * e^(i * -0.60802), )
 
 -16 x^4 + 36 x^3 + -43 x^2 + -15 x + 41 = 0
-	Roots in regular form: (1.05114, -0.803163, 1.00101 + 1.42592i, 1.00101 - 1.42592i, )
+	Roots in regular form: (1.05114 + 0i, -0.803163 + 0i, 1.00101 + 1.42592i, 1.00101 + -1.42592i, )
 	Roots in trigonometric form: (1.05114 * (cos(0) + i * sin(0)), 0.803163 * (cos(3.14159) + i * sin(3.14159)), 1.74221 * (cos(0.958723) + i * sin(0.958723)), 1.74221 * (cos(-0.958723) + i * sin(-0.958723)), )
 	Roots in exponential form: (1.05114 * e^(i * 0), 0.803163 * e^(i * 3.14159), 1.74221 * e^(i * 0.958723), 1.74221 * e^(i * -0.958723), )
 
 27 x^4 + -13 x^3 + -14 x^2 + 30 x + 36 = 0
-	Roots in regular form: (-0.75767 + 0.437473i, -0.75767 - 0.437473i, 0.998411 + 0.863178i, 0.998411 - 0.863178i, )
+	Roots in regular form: (-0.75767 + 0.437473i, -0.75767 + -0.437473i, 0.998411 + 0.863178i, 0.998411 + -0.863178i, )
 	Roots in trigonometric form: (0.874898 * (cos(2.61796) + i * sin(2.61796)), 0.874898 * (cos(-2.61796) + i * sin(-2.61796)), 1.31981 * (cos(0.712881) + i * sin(0.712881)), 1.31981 * (cos(-0.712881) + i * sin(-0.712881)), )
 	Roots in exponential form: (0.874898 * e^(i * 2.61796), 0.874898 * e^(i * -2.61796), 1.31981 * e^(i * 0.712881), 1.31981 * e^(i * -0.712881), )
 
 36 x + 25 = 0
-	Roots in regular form: (-0.694444, )
+	Roots in regular form: (-0.694444 + 0i, )
 	Roots in trigonometric form: (0.694444 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.694444 * e^(i * 3.14159), )
 
 34 x^4 + -13 x^3 + -18 x^2 + 41 x + 19 = 0
-	Roots in regular form: (-0.43622, -0.911694, 0.865134 + 0.810361i, 0.865134 - 0.810361i, )
+	Roots in regular form: (-0.43622 + 0i, -0.911694 + 0i, 0.865134 + 0.810361i, 0.865134 + -0.810361i, )
 	Roots in trigonometric form: (0.43622 * (cos(3.14159) + i * sin(3.14159)), 0.911694 * (cos(3.14159) + i * sin(3.14159)), 1.18539 * (cos(0.752719) + i * sin(0.752719)), 1.18539 * (cos(-0.752719) + i * sin(-0.752719)), )
 	Roots in exponential form: (0.43622 * e^(i * 3.14159), 0.911694 * e^(i * 3.14159), 1.18539 * e^(i * 0.752719), 1.18539 * e^(i * -0.752719), )
 
 37 x^2 + 37 x + 31 = 0
-	Roots in regular form: (-0.5 + 0.766706i, -0.5 - 0.766706i, )
+	Roots in regular form: (-0.5 + 0.766706i, -0.5 + -0.766706i, )
 	Roots in trigonometric form: (0.915335 * (cos(2.14867) + i * sin(2.14867)), 0.915335 * (cos(-2.14867) + i * sin(-2.14867)), )
 	Roots in exponential form: (0.915335 * e^(i * 2.14867), 0.915335 * e^(i * -2.14867), )
 
 -24 x^4 + 8 x^3 + 10 x^2 + -3 x + 9 = 0
-	Roots in regular form: (1, -0.872634, 0.102983 + 0.647401i, 0.102983 - 0.647401i, )
+	Roots in regular form: (1 + 0i, -0.872634 + 0i, 0.102983 + 0.647401i, 0.102983 + -0.647401i, )
 	Roots in trigonometric form: (1 * (cos(0) + i * sin(0)), 0.872634 * (cos(3.14159) + i * sin(3.14159)), 0.655541 * (cos(1.41305) + i * sin(1.41305)), 0.655541 * (cos(-1.41305) + i * sin(-1.41305)), )
 	Roots in exponential form: (1 * e^(i * 0), 0.872634 * e^(i * 3.14159), 0.655541 * e^(i * 1.41305), 0.655541 * e^(i * -1.41305), )
 
 34 x + 42 = 0
-	Roots in regular form: (-1.23529, )
+	Roots in regular form: (-1.23529 + 0i, )
 	Roots in trigonometric form: (1.23529 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.23529 * e^(i * 3.14159), )
 
 -16 x^3 + -29 x^2 + -36 x + -22 = 0
-	Roots in regular form: (-0.960432, -0.426034 + 1.1181i, -0.426034 - 1.1181i, )
+	Roots in regular form: (-0.960432 + 0i, -0.426034 + 1.1181i, -0.426034 + -1.1181i, )
 	Roots in trigonometric form: (0.960432 * (cos(3.14159) + i * sin(3.14159)), 1.19651 * (cos(1.93485) + i * sin(1.93485)), 1.19651 * (cos(-1.93485) + i * sin(-1.93485)), )
 	Roots in exponential form: (0.960432 * e^(i * 3.14159), 1.19651 * e^(i * 1.93485), 1.19651 * e^(i * -1.93485), )
 
 22 x + 14 = 0
-	Roots in regular form: (-0.636364, )
+	Roots in regular form: (-0.636364 + 0i, )
 	Roots in trigonometric form: (0.636364 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.636364 * e^(i * 3.14159), )
 
 45 x^4 + 32 x^3 + 3 x^2 + -7 x + -7 = 0
-	Roots in regular form: (-0.270638 + 0.555637i, -0.270638 - 0.555637i, 0.55886, -0.728694, )
+	Roots in regular form: (-0.270638 + 0.555637i, -0.270638 + -0.555637i, 0.55886 + 0i, -0.728694 + 0i, )
 	Roots in trigonometric form: (0.618043 * (cos(2.02405) + i * sin(2.02405)), 0.618043 * (cos(-2.02405) + i * sin(-2.02405)), 0.55886 * (cos(0) + i * sin(0)), 0.728694 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (0.618043 * e^(i * 2.02405), 0.618043 * e^(i * -2.02405), 0.55886 * e^(i * 0), 0.728694 * e^(i * 3.14159), )
 
 -43 x^3 + -31 x^2 + -37 x + -39 = 0
-	Roots in regular form: (-0.893694, 0.0863818 + 1.00369i, 0.0863818 - 1.00369i, )
+	Roots in regular form: (-0.893694 + 0i, 0.0863818 + 1.00369i, 0.0863818 + -1.00369i, )
 	Roots in trigonometric form: (0.893694 * (cos(3.14159) + i * sin(3.14159)), 1.0074 * (cos(1.48494) + i * sin(1.48494)), 1.0074 * (cos(-1.48494) + i * sin(-1.48494)), )
 	Roots in exponential form: (0.893694 * e^(i * 3.14159), 1.0074 * e^(i * 1.48494), 1.0074 * e^(i * -1.48494), )
 
 -2 x^3 + -40 x^2 + -26 x + -41 = 0
-	Roots in regular form: (-19.3839, -0.30805 + 0.981165i, -0.30805 - 0.981165i, )
+	Roots in regular form: (-19.3839 + 0i, -0.30805 + 0.981165i, -0.30805 + -0.981165i, )
 	Roots in trigonometric form: (19.3839 * (cos(3.14159) + i * sin(3.14159)), 1.02839 * (cos(1.87501) + i * sin(1.87501)), 1.02839 * (cos(-1.87501) + i * sin(-1.87501)), )
 	Roots in exponential form: (19.3839 * e^(i * 3.14159), 1.02839 * e^(i * 1.87501), 1.02839 * e^(i * -1.87501), )
 
 -14 x^2 + 28 x + -50 = 0
-	Roots in regular form: (1 - 1.60357i, 1 + 1.60357i, )
+	Roots in regular form: (1 + -1.60357i, 1 + 1.60357i, )
 	Roots in trigonometric form: (1.88982 * (cos(-1.0132) + i * sin(-1.0132)), 1.88982 * (cos(1.0132) + i * sin(1.0132)), )
 	Roots in exponential form: (1.88982 * e^(i * -1.0132), 1.88982 * e^(i * 1.0132), )
 
 -37 x^4 + 30 x^3 + 5 x^2 + 12 x + -24 = 0
-	Roots in regular form: (-0.49162 + 0.67212i, -0.49162 - 0.67212i, 0.897026 + 0.361604i, 0.897026 - 0.361604i, )
+	Roots in regular form: (-0.49162 + 0.67212i, -0.49162 + -0.67212i, 0.897026 + 0.361604i, 0.897026 + -0.361604i, )
 	Roots in trigonometric form: (0.832728 * (cos(2.20232) + i * sin(2.20232)), 0.832728 * (cos(-2.20232) + i * sin(-2.20232)), 0.967167 * (cos(0.383189) + i * sin(0.383189)), 0.967167 * (cos(-0.383189) + i * sin(-0.383189)), )
 	Roots in exponential form: (0.832728 * e^(i * 2.20232), 0.832728 * e^(i * -2.20232), 0.967167 * e^(i * 0.383189), 0.967167 * e^(i * -0.383189), )
 
 47 x + -37 = 0
-	Roots in regular form: (0.787234, )
+	Roots in regular form: (0.787234 + -0i, )
 	Roots in trigonometric form: (0.787234 * (cos(-0) + i * sin(-0)), )
 	Roots in exponential form: (0.787234 * e^(i * -0), )
 
 -9 x + 41 = 0
-	Roots in regular form: (4.55556, )
+	Roots in regular form: (4.55556 + 0i, )
 	Roots in trigonometric form: (4.55556 * (cos(0) + i * sin(0)), )
 	Roots in exponential form: (4.55556 * e^(i * 0), )
 
 25 x^3 + 28 x^2 + 33 x + -39 = 0
-	Roots in regular form: (0.638568, -0.879284 + 1.29222i, -0.879284 - 1.29222i, )
+	Roots in regular form: (0.638568 + 0i, -0.879284 + 1.29222i, -0.879284 + -1.29222i, )
 	Roots in trigonometric form: (0.638568 * (cos(0) + i * sin(0)), 1.563 * (cos(2.16828) + i * sin(2.16828)), 1.563 * (cos(-2.16828) + i * sin(-2.16828)), )
 	Roots in exponential form: (0.638568 * e^(i * 0), 1.563 * e^(i * 2.16828), 1.563 * e^(i * -2.16828), )
 
-19 x^3 + 22 x^2 + 44 x + -26 = 0
-	Roots in regular form: (0.450181, -0.804038 + 1.54701i, -0.804038 - 1.54701i, )
+ 19 x^3 + 22 x^2 + 44 x + -26 = 0
+	Roots in regular form: (0.450181 + 0i, -0.804038 + 1.54701i, -0.804038 + -1.54701i, )
 	Roots in trigonometric form: (0.450181 * (cos(0) + i * sin(0)), 1.74348 * (cos(2.05011) + i * sin(2.05011)), 1.74348 * (cos(-2.05011) + i * sin(-2.05011)), )
 	Roots in exponential form: (0.450181 * e^(i * 0), 1.74348 * e^(i * 2.05011), 1.74348 * e^(i * -2.05011), )
 
 -28 x^2 + -50 x + 2 = 0
-	Roots in regular form: (-1.82486, 0.039142, )
-	Roots in trigonometric form: (1.82486 * (cos(-3.14159) + i * sin(-3.14159)), 0.039142 * (cos(0) + i * sin(0)), )
-	Roots in exponential form: (1.82486 * e^(i * -3.14159), 0.039142 * e^(i * 0), )
+	Roots in regular form: (-1.82486 + 0i, 0.039142 + 0i, )
+	Roots in trigonometric form: (1.82486 * (cos(3.14159) + i * sin(3.14159)), 0.039142 * (cos(0) + i * sin(0)), )
+	Roots in exponential form: (1.82486 * e^(i * 3.14159), 0.039142 * e^(i * 0), )
 
 25 x + 26 = 0
-	Roots in regular form: (-1.04, )
+	Roots in regular form: (-1.04 + 0i, )
 	Roots in trigonometric form: (1.04 * (cos(3.14159) + i * sin(3.14159)), )
 	Roots in exponential form: (1.04 * e^(i * 3.14159), )
 
-Time consumed solving the equations with ShweiCompleX: 0.00523629 seconds
+Time consumed solving the equations with std::complex: 0.00342254 seconds
