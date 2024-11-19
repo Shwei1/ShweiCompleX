@@ -17,6 +17,8 @@ set(SOURCES_CPP
         src/Polynomials/STL_PolynomialEquation.cpp
         include/Polynomials/STL_PolynomialSolver.hpp
         src/Polynomials/STL_PolynomialSolver.cpp
+        include/CirculantMatrix/STL_CirculantMatrix.hpp
+        src/CirculantMatrix/STL_CirculantMatrix.cpp
 )
 
 set(SOURCES_C

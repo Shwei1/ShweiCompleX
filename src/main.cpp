@@ -5,6 +5,7 @@
 #include "../include/Polynomials/PolynomialEquation.hpp"
 //#include "CirculantMatrix.hpp"
 //#include "GenerateCirculantMatrix.hpp"
+#include "../include/CirculantMatrix/STL_CirculantMatrix.hpp"
 
 // C HEADERS
 #include "../include/Polynomials/C_PolynomialSolver.hpp"
@@ -17,7 +18,7 @@ int main(){
 //    GenerateCirculantMatrix("../data/matrix.txt");
 
 //    PolynomialSolver("../data/polynomials.txt", "../results/shweicomplex_polynomials_solutions.txt");
-    STL_PolynomialSolver("../data/polynomials.txt", "../results/stdcomplex_polynomials_solutions.txt");
+//    STL_PolynomialSolver("../data/polynomials.txt", "../results/stdcomplex_polynomials_solutions.txt");
 //GenerateCirculantMatrix("../matrix.txt");
 
 //CirculantMatrix cm("../matrix.txt");
@@ -40,5 +41,8 @@ int main(){
 //for (auto root: roots){
 //    std::cout << root << ' ';
 //}
+
+STL_CirculantMatrix stdcm("../data/matrix.txt");
+stdcm.solve_and_output("../results/stdcomplex_matrix_solutions.txt");
 
 }
