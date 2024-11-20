@@ -1,4 +1,3 @@
-
 #include "../tools/PolynomialGenerator.hpp"
 #include "../tools/GenerateCirculantMatrix.hpp"
 
