@@ -1,5 +1,5 @@
-#include "../../include/Polynomials/PolynomialEquation.hpp"
-#include "../../include/Complex.hpp"
+#include "PolynomialEquation.hpp"
+#include "../Complex.hpp"
 #include <cmath>
 
 PolynomialEquation::PolynomialEquation(ComplexType a, ComplexType b, ComplexType c, ComplexType d, ComplexType e)
@@ -79,15 +79,15 @@ std::vector<PolynomialEquation::ComplexType> PolynomialEquation::solve_cubic() c
     ComplexType p = (3 * a * c - b * b) / (3 * a * a);
     ComplexType q = (2 * b * b * b - 9 * a * b * c + 27 * a * a * d)/(27 * a * a * a);
 
-    std::cout << "p = " << p << std::endl;
-    std::cout << "q = " << q << std::endl;
+//    std::cout << "p = " << p << std::endl;
+//    std::cout << "q = " << q << std::endl;
 
     ComplexType discriminant = (q * q) / 4 + (p * p * p) / 27;
 
     ComplexType discriminant_root = ComplexType::sqrt(discriminant);
 
-    std::cout << "disc = " << discriminant << std::endl;
-    std::cout << "disc root = " << discriminant_root << std::endl;
+//    std::cout << "disc = " << discriminant << std::endl;
+//    std::cout << "disc root = " << discriminant_root << std::endl;
 
 
     if (discriminant.get_real() > 0) {
@@ -95,8 +95,8 @@ std::vector<PolynomialEquation::ComplexType> PolynomialEquation::solve_cubic() c
         ComplexType u = std::cbrt((-q.get_real()) / 2 + discriminant_root.get_real());
         ComplexType v = std::cbrt((-q.get_real()) / 2 - discriminant_root.get_real());
 
-        std::cout << "u = " << u << std::endl;
-        std::cout << "v = " << v << std::endl;
+//        std::cout << "u = " << u << std::endl;
+//        std::cout << "v = " << v << std::endl;
 
         ComplexType x1 = u + v;
 
@@ -122,8 +122,8 @@ std::vector<PolynomialEquation::ComplexType> PolynomialEquation::solve_cubic() c
         double r = 2.0 * std::sqrt(-p.get_real() / 3.0);
         double theta = std::acos(3.0 * q.get_real() / (2.0 * p.get_real()) * std::sqrt(-3.0 / p.get_real()));
 
-        std::cout << "r = " << r << std::endl;
-        std::cout << "theta = " << theta << std::endl;
+//        std::cout << "r = " << r << std::endl;
+//        std::cout << "theta = " << theta << std::endl;
 
         ComplexType x1 = r * std::cos(theta / 3.0);
         ComplexType x2 = r * std::cos((theta + 2.0 * M_PI) / 3.0);

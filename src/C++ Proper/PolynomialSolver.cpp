@@ -1,5 +1,5 @@
-#include "../../include/Polynomials/PolynomialEquation.hpp"
-#include "../../include/Polynomials/PolynomialSolver.hpp"
+#include "PolynomialEquation.hpp"
+#include "PolynomialSolver.hpp"
 #include <fstream>
 #include <iostream>
 #include <chrono>

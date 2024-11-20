@@ -4,28 +4,30 @@ project(ShweiCompleX LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCES_CPP
-        src/Polynomials/C_PolynomialSolver.cpp
+        src/C/C_PolynomialSolver.cpp
         tools/PolynomialGenerator.cpp
-        src/Polynomials/PolynomialEquation.cpp
-        src/Polynomials/PolynomialSolver.cpp
-        src/CirculantMatrix/CirculantMatrix.cpp
+        "src/C++ Proper/PolynomialEquation.cpp"
+        "src/C++ Proper/PolynomialSolver.cpp"
+        "src/C++ Proper/CirculantMatrix.cpp"
         tools/GenerateCirculantMatrix.cpp
         src/main.cpp
-        include/Polynomials/C_PolynomialSolver.hpp
-        include/CirculantMatrix/C_CirculantMatrixSolver.hpp
-        include/Polynomials/STL_PolynomialEquation.hpp
-        src/Polynomials/STL_PolynomialEquation.cpp
-        include/Polynomials/STL_PolynomialSolver.hpp
-        src/Polynomials/STL_PolynomialSolver.cpp
-        include/CirculantMatrix/STL_CirculantMatrix.hpp
-        src/CirculantMatrix/STL_CirculantMatrix.cpp
+        src/C/C_PolynomialSolver.hpp
+        src/C/C_CirculantMatrixSolver.hpp
+        src/C/C_CirculantMatrixSolver.cpp
+        "src/C++ STL/STL_PolynomialEquation.hpp"
+        "src/C++ STL/STL_PolynomialEquation.cpp"
+        "src/C++ STL/STL_PolynomialSolver.hpp"
+        "src/C++ STL/STL_PolynomialSolver.cpp"
+        "src/C++ STL/STL_CirculantMatrix.hpp"
+        "src/C++ STL/STL_CirculantMatrix.cpp"
+        src/C/C_CirculantMatrixSolver.cpp
 )
 
 set(SOURCES_C
-        src/Polynomials/C_PolynomialEquation.c
-        include/Polynomials/C_PolynomialEquation.h
-        include/CirculantMatrix/C_CirculantMatrix.h
-        src/CirculantMatrix/C_CirculantMatrix.c
+        src/C/C_PolynomialEquation.c
+        src/C/C_PolynomialEquation.h
+        src/C/C_CirculantMatrix.h
+        src/C/C_CirculantMatrix.c
 )
 
 add_executable(ShweiCompleX ${SOURCES_CPP} ${SOURCES_C})

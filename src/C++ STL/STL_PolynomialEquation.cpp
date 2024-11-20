@@ -1,4 +1,4 @@
-#include "../../include/Polynomials/STL_PolynomialEquation.hpp"
+#include "STL_PolynomialEquation.hpp"
 #include <cmath>
 #include <iostream>
 

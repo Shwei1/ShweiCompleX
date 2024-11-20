@@ -1,4 +1,4 @@
-#include "../include/Polynomials/PolynomialGenerator.hpp"
+#include "PolynomialGenerator.hpp"
 #include <fstream>
 #include <stdexcept>
 
