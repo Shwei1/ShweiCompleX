@@ -34,4 +34,4 @@ add_executable(ShweiCompleX ${SOURCES_CPP} ${SOURCES_C})
 
 set_source_files_properties(${SOURCES_C} PROPERTIES LANGUAGE C)
 
-target_include_directories(ShweiCompleX PRIVATE include)
+#target_include_directories(ShweiCompleX PRIVATE include)
