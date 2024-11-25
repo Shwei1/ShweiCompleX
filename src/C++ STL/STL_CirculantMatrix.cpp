@@ -3,6 +3,7 @@
 #include <chrono>
 #include <cmath>
 #include <stdexcept>
+#include <algorithm>
 
 std::vector<STL_CirculantMatrix::ComplexType> STL_CirculantMatrix::row_to_column(const std::vector<ComplexType>& first_row) {
 
